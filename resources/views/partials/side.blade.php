@@ -97,7 +97,7 @@
                 <a href="{{ route('produk.index') }}" aria-expanded="false"><i class="icon dripicons-blog"></i><span>DATA PRODUK</span></a>
               </li>
               <li class="nav-dropdown">
-                <a href="{{ route('fotoproduk.index') }}" aria-expanded="false"><i class="icon dripicons-blog"></i><span>DATA FOTO PRODUK</span></a>
+                <!--  -->
               </li>
               <li class="nav-dropdown">
                 <a href="{{ route('cart.index') }}" aria-expanded="false"><i class="icon dripicons-blog"></i><span>DATA CART</span></a>

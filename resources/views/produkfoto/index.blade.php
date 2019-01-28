@@ -17,20 +17,16 @@
           <h2 class="card-heading">
             <center>TABEL DATA FOTO PRODUK</center>
           </h2>
-          <a href="{{route('fotoproduk.create')}}">
-          <button type="button" class="btn btn-primary btn-rounded btn-floating btn-outline" data-toggle="modal" >
-          TAMBAH
-          </button>
-          </a>
+          <!--  -->
         </div>
-        <div id="search-10" class="widget_search">
+        <!-- <div id="search-10" class="widget_search">
           <form role="search" method="get" action="{{url('admin/fotoproduk')}}">
             <div style="text-align: right;">
               <input  placeholder="Cari Nama Barang" class="" type="text" value="" name="search" id="s">
               <button type="submit"><i class="glyphicon glyphicon-search">Search</i></button>
             </div>
           </form>
-        </div>
+        </div> -->
       </h5>
       <div class="card-body">
         <div class="table-responsive">

@@ -1,7 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Produk;
+use App\Merk;
+use App\Artikel;
+use App\KategoriArtikel;
+use App\KategoriProduk;
+use App\Testimoni;
+use App\Contact;
+use App\Cart;
+use Auth;
 use Illuminate\Http\Request;
 use Laratrust\LaratrustFacade as Laratrust;
 class HomeController extends Controller
@@ -33,6 +41,13 @@ class HomeController extends Controller
     }
     protected function memberDashboard()
     {
-        return view('Frontend.home');
+        $produk =Produk::all();
+        $merk = Merk::all();
+        $artikel =Artikel::all();
+        $testimoni = Testimoni::all();
+        $contact = Contact::all();
+        $cart = Cart::all();
+        $mycart = Auth::user()->cart()->get();
+        return view('Frontend.home',compact('mycart','cart','produk','contact','merk','artikel','testimoni'));
     }
 }

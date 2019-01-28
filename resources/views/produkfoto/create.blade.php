@@ -25,16 +25,12 @@
             </h2>
             <div class="modal-footer">
             </div>
-            <form action="{{ route('fotoproduk.store') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('fotoproduk.store',$barang->id) }}" method="post" enctype="multipart/form-data">
               {{ csrf_field() }}
               <div class="form-group {{ $errors->has('produk_id') ? 'has error' : '' }}">
                 <label class="control-label">NAMA PRODUK</label>
-                <select name="produk_id" class="js-selectize">
-                  <option>-</option>
-                  @foreach($barang as $data)
-                  <option value="{{ $data->id }}">{{ $data->nama }}</option>
-                  @endforeach
-                </select>
+                <input type="hidden" name="produk_id" value="{{$barang->id}}">
+                <input type="text" class="form-control"  name="" value="{{$barang->nama}}" readonly="">
                 @if ($errors->has('barang'))
                 <span class="help-block">
                 <strong>{{ $errors->first('barang') }}</strong>

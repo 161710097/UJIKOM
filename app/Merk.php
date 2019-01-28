@@ -12,6 +12,6 @@ class Merk extends Model
 
     public function Produk()
 	{
-		return $this->hasOne('App\Produk');
+		return $this->hasMany('App\Produk','merk_id');
 	}
 }

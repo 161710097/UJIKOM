@@ -23,14 +23,14 @@
           </button>
           </a>
         </div>
-        <div id="search-10" class="widget_search">
+        <!-- <div id="search-10" class="widget_search">
           <form role="search" method="get" action="{{url('admin/merk')}}">
             <div style="text-align: right;">
             <input  placeholder="Cari Data Merk" class="" type="text" value="" name="search" id="s">
             <button type="submit"><i class="glyphicon glyphicon-search">Search</i></button>
             </div>
           </form>
-        </div>  
+        </div> -->  
       </h5>
       <div class="card-body">
         <div class="table-responsive">

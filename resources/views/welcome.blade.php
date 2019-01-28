@@ -47,6 +47,7 @@
         <!-- Theme End -->
         <script src="{{asset('assets/catalog/view/javascript/common.js')}}" ></script>
         <script  src="{{asset('assets/catalog/view/javascript/themejs/parallax.js')}}"></script>
+        <script  src="{{asset('js/komentar.js')}}"></script>
       </head>
       <body class="common-home   layout-1">
         @include('partial.header')
@@ -203,6 +204,42 @@
                   $("#tab_spinner").fadeOut("slow");
                 }); 
               </script>
+              <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <link rel="stylesheet" href="/resources/demos/style.css">
+                <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+                    $( function() {
+                    $( "#slider-range" ).slider({
+                        range: true,
+                        min: 0,
+                        max: 600000000,
+                        values: [ 75, 300 ],
+                        slide: function( event, ui ) {
+                    $( "#amount_start" ).val( ui.values[ 0 ]);
+                    $( "#amount_end" ).val( ui.values[ 1 ]);
+                        }
+                      });
+                  } );
+                </script>
+
+                <script >
+                  function send(){
+                    var start = $('#amount_start').val();
+                    var end = $('#amount_end').val();
+
+                    $.ajax({
+                        type : 'get',
+                        url : '/produks',
+                        data : "start=" + start + "& end =" + end,
+
+                        success : function (response) {
+                          console.log(response)
+                          $('#updateDiv').html(response);
+                        }
+                    });
+                  }
+                </script>
       </body>
       <!-- Mirrored from thementic.com/opencart/OPC02/OPC0200032/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Nov 2018 08:11:53 GMT -->
     </html>

@@ -24,9 +24,14 @@ class Produk extends Model
     	return $this->hasMany('App\ProdukFoto','produk_id');
     }
 
-    public function cart()
+    public function komentar()
     {
-        return $this->hasMany('App\Cart');
+        return $this->hasMany('App\Komentar','produk_id');
+    }
+
+    public function transakasi()
+    {
+        return $this->hasMany('App\Transaksi','produk_id');
     }
 
 	public function getRouteKeyName()

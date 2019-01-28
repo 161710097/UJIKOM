@@ -73,36 +73,67 @@
                   </div>
                 </div>
               </div>
+
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <link rel="stylesheet" href="/resources/demos/style.css">
+                <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+                    $( function() {
+                    $( "#slider-range" ).slider({
+                        range: true,
+                        min: 0,
+                        max: 600000000,
+                        values: [ 75, 300 ],
+                        slide: function( event, ui ) {
+                    $( "#amount_start" ).val( ui.values[ 0 ]);
+                    $( "#amount_end" ).val( ui.values[ 1 ]);
+                        }
+                      });
+                  } );
+                </script>
+
+                <script >
+                  function send(){
+                    var start = $('#amount_start').val();
+                    var end = $('#amount_end').val();
+
+                    $.ajax({
+                        type : 'get',
+                        url : '/produks',
+                        data : "start=" + start + "& end =" + end,
+
+                        success : function (response) {
+                          console.log(response)
+                          $('#updateDiv').html(response);
+                        }
+                    });
+                  }
+                </script>
+
+
               <div class="list-group-items">
                 <a class="list-group-item">price</a>
                 <div class="list-group-item">
-                  <div id="filter-group2">
-                    <div class="checkbox">
-                      <label>            <input type="checkbox" name="filter[]" value="6" />
-                      $50.00 - $200.00 
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label>            <input type="checkbox" name="filter[]" value="7" />
-                      $201.00 - $500.00 
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label>            <input type="checkbox" name="filter[]" value="8" />
-                      $501.00 - $800.00
-                      </label>
-                    </div>
-                    <div class="checkbox">
-                      <label>            <input type="checkbox" name="filter[]" value="9" />
-                      $801.00 - $2000.00
-                      </label>
-                    </div>
-                  </div>
+                  <p>
+                      <label for="amount">Price range:</label><br>
+                      <b class="pull-left">
+                      Rp.<input type="text" style="width: 30px; height: 23px; " id="amount_start" value="70" name="star_price" >
+                      </b>
+                      <b class="pull-right">
+                      Rp.<input type="text" style="width: 30px; height: 23px; " id="amount_end" value="100"  name="end_price">
+                      </b>
+                  </p><br>
+ 
+                    <div id="slider-range"></div>
                 </div>
               </div>
               <div class="panel-footer text-right">
-                <button type="button" id="button-filter" class="btn btn-primary">Refine Search</button>
+                                  
+                  <button  onclick="send();" type="button" class="btn btn-primary">Refine Search</button>
+                
               </div>
+              <div id="showPrice"><div id="showDiv"></div></div>
             </div>
           </div>
         </div>

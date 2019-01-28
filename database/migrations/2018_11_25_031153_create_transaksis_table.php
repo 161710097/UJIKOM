@@ -15,13 +15,21 @@ class CreateTransaksisTable extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('cart_id');
-            $table->foreign('cart_id')->references('id')->on('carts')->onUpdate('cascade')->onDelete('cascade');
             $table->string('nama');
             $table->string('nama_lengkap');
-            $table->string('no_telpon');
             $table->string('email');
-            $table->text('alamat');
+            $table->string('no_tlp');
+            $table->string('alamat');
+            $table->string('kota_kab');
+            $table->string('prov');
+            $table->integer('kode_pos');
+            $table->string('catatan');
+            $table->boolean('status')->nullable();
+            $table->string('bukti_transfer')->nullable();
+            $table->unsignedInteger('produk_id');
+            $table->foreign('produk_id')->references('id')->on('produks')->ondelete('cascade');
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->ondelete('cascade');
             $table->timestamps();
         });
     }

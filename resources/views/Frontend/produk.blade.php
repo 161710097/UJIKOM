@@ -109,6 +109,7 @@
         <div class="product-layout-wrap">
           <div class="row">
             @foreach($produk as $data)
+            <div id="updateDiv">
             <div class="product-layout product-list col-xs-12">
               <div class="product-block product-thumb">
                 <div class="product-block-inner">
@@ -159,6 +160,7 @@
                    </div>
                 </div>
               </div>
+            </div>
             </div>
             @endforeach
           </div>

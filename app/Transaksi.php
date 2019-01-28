@@ -6,11 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Transaksi extends Model
 {
-    protected $table = 'transaksis';
-    protected $fillable =['cart_id','nama','nama_lengkap','no_telpon','email','alamat'];
+    protected $table = 'customs';
+    protected $fillable = ['nama', 'alamat', 'no_tlp', 'pengiriman', 'jumlah_brg', 'pembayaran', 'product_id', 'user_id'];
     public $timestamps = true;
-	public function cart()
-	{
-		return $this->belongsTo('App\Cart','cart_id');
-	}
+
+    public function product()
+    {
+    	return $this->belongsTo('App\Product','product_id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User','user_id');
+    }
 }

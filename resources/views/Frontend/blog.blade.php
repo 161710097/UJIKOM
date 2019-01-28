@@ -53,7 +53,7 @@
               <div class="summary">
                 <div class="blog-left-content">
                   <div class="image">
-                    <img src="{{ asset('admin/images/cover/'.$data->cover)  }}" alt="Blogs" title="Blogs" class="img-thumbnail" />
+                    <img  src="{{ asset('admin/images/cover/'.$data->cover)  }}" alt="Blogs" title="Blogs" class="img-thumbnail" />
                     <div class="post_hover"> </div>
                     <p class="post_hover"><a class="icon zoom" title="Click to view Full Image " href="{{ asset('admin/images/cover/'.$data->cover)  }}" data-lightbox="example-set"><i class="fa fa-plus"></i> </a></p>
                   </div>

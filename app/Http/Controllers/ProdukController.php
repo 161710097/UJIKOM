@@ -94,7 +94,7 @@ class ProdukController extends Controller
         $barang->stock = $request->stock;
         $barang->slug = str_slug($request->nama,'-');
         $barang->save();
-        return redirect()->route('produk.index');
+        return redirect()->route('fotoproduk.create',$barang->id);
     }
 
     /**

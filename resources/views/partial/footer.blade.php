@@ -1,3 +1,6 @@
+@php
+$contact =App\Contact::all();
+@endphp
 <footer>
           <div id="footer">
           <div class="content_footer_top">

@@ -24,14 +24,6 @@
           </button>
           </a>
         </div>
-        <div id="search-10" class="widget_search">
-          <form role="search" method="get" action="{{url('admin/artikel')}}">
-            <div style="text-align: right;">
-              <input  placeholder="Cari Data Artikel" class="" type="text" value="" name="search" id="s">
-              <button type="submit"><i class="glyphicon glyphicon-search">Search</i></button>
-            </div>
-          </form>
-        </div>
       </h5>
       <div class="card-body">
         <div class="table-responsive">

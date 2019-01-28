@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Cart;
+use App\user;
+use App\Produk;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
@@ -36,7 +38,22 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'user_id' => 'required|',
+            'produk_id'=> 'required',
+            'quantity' => 'required'
+        ]);
+        $a = new Cart;
+        $barang = Produk::find($request->produk_id);
+        $a->user_id = $request->user_id;
+        $a->produk_id = $request->produk_id;
+        $a->quantity = $request->quantity;
+        $a->total_harga = $request->quantity * $barang->harga;
+        $barang->stock = $barang->stock - $request->quantity;
+        $barang->save();
+        $a->save();
+        return response()->json(['success'=>true]);
+
     }
 
     /**
@@ -79,8 +96,10 @@ class CartController extends Controller
      * @param  \App\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cart $cart)
+    public function destroy(Request $request)
     {
-        //
+        $cart = Cart::find($request->input('id'));
+        $cart->delete();
+        return redirect()->route('mycart');
     }
 }

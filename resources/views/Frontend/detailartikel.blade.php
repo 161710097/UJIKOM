@@ -82,7 +82,7 @@
                   <h2 class="blog_title"><a href="/artikel/{{$data->slug}}">{{$data->judul}}</a></h2>
                   <div class="blog_stats">
                     <!--<span> <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/blogger&amp;blogger_id=8"><i class="fa fa-comments"></i> 0Comment</a> </span>-->
-                    <span> <i class="fa fa-calendar"></i>  {{$data->created_at->diffForHumans()}}</span>
+                    <span> <i class="fa fa-calendar"></i>  {{$data->created_at->format('d M, Y')}}</span>
                     <!--<span> <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/blogger&amp;blogger_id=8"> <i class="fa fa-long-arrow-right"></i> read more</a> </span>-->
                   </div>
                   <!--<p> certain circumstances and owing to the claims of duty or the obligations of business.</p>        <p><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/blogger&amp;blogger_id=8">read more<i class="fa fa-long-arrow-right"></i></a> </p>-->

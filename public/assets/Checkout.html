@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/checkout -->
+<html dir="ltr" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout</title>
+    <!--<base href="http://thementic.com/opencart/OPC02/OPC0200032/">-->
+    <base href=".">
+    <script src="./Checkout_files/jquery-2.1.1.min.js.download"></script>
+    <!-- <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" /> -->
+    <script src="./Checkout_files/bootstrap.min.js.download"></script>
+    <link href="./Checkout_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./Checkout_files/css" rel="stylesheet">
+    <link href="./Checkout_files/stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/carousel.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/custom.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/animate.css">
+    <!-- <link href="style.href" type="text/css" rel="style.rel" media="style.media" />
+      -->
+    <script src="./Checkout_files/lightbox-2.6.min.js.download"></script>
+    <link href="./Checkout_files/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="./Checkout_files/moment.min.js.download"></script>
+    <script src="./Checkout_files/moment-with-locales.min.js.download"></script>
+    <script src="./Checkout_files/bootstrap-datetimepicker.min.js.download"></script>
+    <script src="./Checkout_files/common.js.download"></script>
+    <link href="http://thementic.com/opencart/OPC02/OPC0200032/image/catalog/cart.png" rel="icon">
+    <!-- Theme Start -->
+    <script type="text/javascript" src="./Checkout_files/custom.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/jstree.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/carousel.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/productcarosel.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/jquery.custom.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/jquery.formalize.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/jquery.elevatezoom.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/bootstrap-notify.min.js.download"></script>  
+    <script type="text/javascript" src="./Checkout_files/jquery.magnific-popup.min.js.download"></script>
+    <script type="text/javascript" src="./Checkout_files/owl.carousel.min.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./Checkout_files/magnific-popup.css">
+    <script src="./Checkout_files/tabs.js.download"></script>
+    <!-- Theme End -->
+    <script src="./Checkout_files/common.js.download"></script>
+    <script src="./Checkout_files/parallax.js.download"></script>
+  </head>
+  <body class="checkout-checkout   layout-1">
+    <header>
+      <div class="header">
+        <div class="header-nav-wrapper">
+          <div class="container">
+            <div class="header-nav-left">
+              <div class="nav pull-left ">
+              </div>
+            </div>
+            <div class="header-nav-right">
+              <!--<div id="wish-list" class="wish-list hidden-md-down">
+                <div class="wish-details">
+                <span class="wish-image"></span>
+                </div>
+                
+                <div class="wish-list-details dropdown-menu">
+                <div class="header-wishlist"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><span class="wishlist">Wish List (0)</span></a></div>
+                </div>	
+                </div>-->
+            </div>
+          </div>
+        </div>
+        <div class="content_headercms_top">
+          <div id="main-menu" class="main-menu">
+            <nav class="nav-container" role="navigation">
+              <div class="nav-inner">
+                <!-- ======= Menu Code START ========= -->
+                <!-- Opencart 3 level Category Menu-->
+                <div id="menu" class="main-menu">
+                  <div class="nav-responsive">
+                    <span>Menu</span>
+                    <div class="menu-expand-wrapper">
+                      <div class="expandable"></div>
+                    </div>
+                  </div>
+                  <div class="nav-mainmenu btn-modal hidden-sm hidden-xs">
+                    <span class="mainmenu-btn-wrapper">
+                    <span class="mainmenu-btn"></span>
+                    </span>
+                    <span class="mainmenu-text">menu</span>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="top_level home home_first"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=common/home">Home</a></li>
+                    <li class="top_level"> <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/blogger/blogs">blog</a></li>
+                    <li class="top_level dropdown">
+                      <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34">our store</a>
+                      <div class="dropdown-menu megamenu column3" style="">
+                        <div class="dropdown-inner">
+                          <ul class="list-unstyled childs_1">
+                            <!-- 2 Level Sub Categories START -->
+                            <li class="dropdown">
+                              <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_48">casual shoes</a>
+                              <div class="dropdown-menu">
+                                <div class="dropdown-inner">
+                                  <ul class="list-unstyled childs_2">
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_48_52">rem aperiam</a></li>
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_48_51">ridiculus mus</a></li>
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_48_24">dictum gravida</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <!-- 2 Level Sub Categories END -->
+                          </ul>
+                          <ul class="list-unstyled childs_1">
+                            <!-- 2 Level Sub Categories START -->
+                            <li class="dropdown">
+                              <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_49">formal shoes</a>
+                              <div class="dropdown-menu">
+                                <div class="dropdown-inner">
+                                  <ul class="list-unstyled childs_2">
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_49_53">temporibus autem</a></li>
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_49_55">ullamco laboris </a></li>
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_49_44">voluptatem sequi</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <!-- 2 Level Sub Categories END -->
+                          </ul>
+                          <ul class="list-unstyled childs_1">
+                            <!-- 2 Level Sub Categories START -->
+                            <li class="dropdown">
+                              <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_43">sports shoes</a>
+                              <div class="dropdown-menu">
+                                <div class="dropdown-inner">
+                                  <ul class="list-unstyled childs_2">
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_43_50">accusamus iusto	</a></li>
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_43_47">nulla venenatis</a></li>
+                                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=34_43_28">Phasellus tempu</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <!-- 2 Level Sub Categories END -->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="top_level dropdown">
+                      <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=20">top wear</a>
+                      <div class="dropdown-menu megamenu column1" style="">
+                        <div class="dropdown-inner">
+                          <ul class="list-unstyled childs_1">
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=20_26">gravida</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=20_27">lighting &amp; studio</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="top_level dropdown">
+                      <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=18">bottomwear</a>
+                      <div class="dropdown-menu megamenu column1" style="">
+                        <div class="dropdown-inner">
+                          <ul class="list-unstyled childs_1">
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=18_46">Macs</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=18_45">refrigerators</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="top_level dropdown">
+                      <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=25">etruscan </a>
+                      <div class="dropdown-menu megamenu column1" style="">
+                        <div class="dropdown-inner">
+                          <ul class="list-unstyled childs_1">
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=25_31">canonical adaptations</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=25_30">hemp jewelry</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=25_29">Safed chalwan</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                            <!-- 2 Level Sub Categories START -->
+                            <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=25_32">untrammelled owing</a></li>
+                            <!-- 2 Level Sub Categories END -->
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="top_level"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=57">grapefruits</a></li>
+                    <li class="top_level"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=17">pomegranates</a></li>
+                    <li class="top_level"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=60">tengelows</a></li>
+                    <li class="top_level hiden_menu dropdown">
+                      <a href="http://thementic.com/opencart/OPC02/OPC0200032/#" class="level-top">More</a>
+                      <div class="dropdown-menu megamenu">
+                        <div class="dropdown-inner">
+                    <li class="top_level"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=61">cantaloupe</a></li><li class="top_level"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/category&amp;path=62">festive wear</a></li></div></div></li>
+                    <!--<li class="level0" ><a href="">Sitemap</a></li>
+                      <li class="level0" ><a href="">contact us</a></li> 
+                      <li class="level0" ><a href="">about us</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="dropdown myaccount">
+            <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown">
+              <!--<span class="account-title">My Account</span>--> <span class="caret"></span>
+              <span class="user-info-image">my account<i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
+              <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/register">Register</a></li>
+              <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/login">Login</a></li>
+              <nav id="top">
+                <!-- <div class="container"> -->
+              </nav>
+              <div class="nav pull-left">
+                <div class="pull-left">
+                  <form action="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language">
+                    <div class="btn-group">
+                      <button class="btn btn-link dropdown-toggle common-btn" data-toggle="dropdown" title="Language">
+                        <img class="hidden-md hidden-lg" src="./Checkout_files/en-gb.png" alt="English">
+                        <span class="Language-text">Language</span>&nbsp;<!--<i class="fa fa-caret-down"></i>-->
+                      </button>
+                      <ul class="dropdown-menu language-menu">
+                        <li>
+                          <button class="btn btn-link btn-block language-select" type="button" name="en-gb" title="English"><img src="./Checkout_files/en-gb.png" alt="English" title="English"> English</button>
+                        </li>
+                        <li>
+                          <button class="btn btn-link btn-block language-select" type="button" name="ar" title="Arabic"><img src="./Checkout_files/ar.png" alt="Arabic" title="Arabic"> Arabic</button>
+                        </li>
+                        <li>
+                          <button class="btn btn-link btn-block language-select" type="button" name="fr-Fr" title="Français"><img src="./Checkout_files/fr-Fr.png" alt="Français" title="Français"> Français</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <input type="hidden" name="code" value="">
+                    <input type="hidden" name="redirect" value="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/checkout">
+                  </form>
+                </div>
+                <div class="pull-left">
+                  <form action="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="form-currency" title="Currency">
+                    <div class="btn-group">
+                      <button class="btn btn-link dropdown-toggle common-btn" data-toggle="dropdown">
+                        <strong>$</strong> 
+                        <span class="currency-text">Currency</span>&nbsp;<!--<i class="fa fa-caret-down"></i>-->
+                      </button>
+                      <ul class="dropdown-menu currency-menu">
+                        <li>
+                          <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+                        </li>
+                        <li>
+                          <button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button>
+                        </li>
+                        <li>
+                          <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <input type="hidden" name="code" value="">
+                    <input type="hidden" name="redirect" value="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/checkout">
+                  </form>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="header-logo">
+            <div id="logo"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=common/home"><img src="./Checkout_files/Logo.png" title="Your Store" alt="Your Store" class="img-responsive"></a></div>
+          </div>
+          <div class="header-cart">
+            <div id="cart" class="btn-group btn-block">
+              <!--<span class="cart-icon"></span>-->
+              <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle">
+                <!-- <span class="heading-title">Checkout</span>-->
+                <span id="cart-total">1</span>
+                <span id="cart-title">your bag<i class="fa fa-angle-down"></i></span>
+              </button>
+              <ul class="dropdown-menu pull-right cart-menu">
+                <li>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td class="text-center"> <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/product&amp;product_id=51"><img src="./Checkout_files/1-74x74.jpg" alt="aenean dignissim" title="aenean dignissim" class="img-thumbnail"></a> </td>
+                        <td class="text-left"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/product&amp;product_id=51">aenean dignissim</a>              <br>
+                          - <small>Delivery Date 2011-04-22</small>                         
+                        </td>
+                        <td class="text-right">x 1</td>
+                        <td class="text-right">$59.60</td>
+                        <td class="text-center"><button type="button" onclick="cart.remove(&#39;104&#39;);" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+                <li>
+                  <div>
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                          <td class="text-right"><strong>Sub-Total</strong></td>
+                          <td class="text-right">$48.00</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                          <td class="text-right">$2.00</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right"><strong>VAT (20%)</strong></td>
+                          <td class="text-right">$9.60</td>
+                        </tr>
+                        <tr>
+                          <td class="text-right"><strong>Total</strong></td>
+                          <td class="text-right">$59.60</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="text-right button-container"><a class="addtocart" href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/cart"><strong>View Cart</strong></a>&nbsp;&nbsp;&nbsp;<a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/checkout" class="checkout"><strong>Checkout</strong></a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown search" title="Search item here">
+            <div class="header-search dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown"></div>
+            <div id="search" class="input-group dropdown-menu">
+              <input type="text" name="search" value="" placeholder="Search item here" class="form-control input-lg">
+              <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-lg">Search item here
+              <span class="search_button"></span>
+              </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="content_headercms_bottom">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="nav-inner-cms">
+      <div class="header-bottom">
+        <!-- <div class="main-menu container" id="cms-menu">
+          <ul class="main-navigation">
+          <li class="first level0"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=affiliate/account">Affiliate</a></li>
+              <li class="level0"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/voucher">Gift Certificates</a></li>
+              <li class="level0"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/manufacturer">Brands</a></li> 
+              <li class="level0"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/return/add">Returns</a></li> 
+              <li class="level0"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/sitemap">Sitemap</a></li>
+              <li class="last level0"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/contact">contact us</a></li>
+                
+           </ul>
+          </div> -->
+      </div>
+    </div>
+    <div id="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
+          <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/cart">Shopping Cart</a></li>
+          <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=checkout/checkout">Checkout</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ======= Quick view JS ========= -->
+    <script> 
+      function quickbox(){
+       if ($(window).width() > 767) {
+          $('.quickview').magnificPopup({
+            type:'iframe',
+            delegate: 'a',
+            preloader: true,
+            tLoading: 'Loading image #%curr%...',
+          });
+       }  
+      }
+      jQuery(document).ready(function() {quickbox();});
+      jQuery(window).resize(function() {quickbox();});
+      
+    </script>
+    <div id="checkout-checkout" class="container">
+      <div class="row">
+        <div id="content" class="col-sm-12">
+          <h2 class="page-title">Checkout</h2>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#collapse-checkout-option" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 1: Checkout Options <i class="fa fa-caret-down"></i></a></h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapse-checkout-option" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h2>New Customer</h2>
+                      <p>Checkout Options:</p>
+                      <div class="radio">
+                        <label>         <input type="radio" name="account" value="register" checked="checked">
+                        Register Account</label>
+                      </div>
+                      <div class="radio">
+                        <label>         <input type="radio" name="account" value="guest">
+                        Guest Checkout</label>
+                      </div>
+                      <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+                      <input type="button" value="Continue" id="button-account" data-loading-text="Loading..." class="btn btn-primary">
+                    </div>
+                    <div class="col-sm-6">
+                      <h2>Returning Customer</h2>
+                      <p>I am a returning customer</p>
+                      <div class="form-group">
+                        <label class="control-label" for="input-email">E-Mail</label>
+                        <input type="text" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label" for="input-password">Password</label>
+                        <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control">
+                        <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/forgotten">Forgotten Password</a>
+                      </div>
+                      <input type="button" value="Login" id="button-login" data-loading-text="Loading..." class="btn btn-primary">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 2: Billing Details <i class="fa fa-caret-down"></i></a></h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapse-payment-address" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <fieldset id="account">
+                        <legend>Your Personal Details</legend>
+                        <div class="form-group" style="display:  none ;">
+                          <label class="control-label">Customer Group</label>
+                          <div class="radio">
+                            <label>
+                            <input type="radio" name="customer_group_id" value="1" checked="checked">
+                            Default</label>
+                          </div>
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-firstname">First Name</label>
+                          <input type="text" name="firstname" value="" placeholder="First Name" id="input-payment-firstname" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-lastname">Last Name</label>
+                          <input type="text" name="lastname" value="" placeholder="Last Name" id="input-payment-lastname" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-email">E-Mail</label>
+                          <input type="text" name="email" value="" placeholder="E-Mail" id="input-payment-email" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-telephone">Telephone</label>
+                          <input type="text" name="telephone" value="" placeholder="Telephone" id="input-payment-telephone" class="form-control">
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                      <fieldset id="address" class="">
+                        <legend>Your Address</legend>
+                        <div class="form-group">
+                          <label class="control-label" for="input-payment-company">Company</label>
+                          <input type="text" name="company" value="" placeholder="Company" id="input-payment-company" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-address-1">Address 1</label>
+                          <input type="text" name="address_1" value="" placeholder="Address 1" id="input-payment-address-1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label" for="input-payment-address-2">Address 2</label>
+                          <input type="text" name="address_2" value="" placeholder="Address 2" id="input-payment-address-2" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-city">City</label>
+                          <input type="text" name="city" value="" placeholder="City" id="input-payment-city" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-postcode">Post Code</label>
+                          <input type="text" name="postcode" value="" placeholder="Post Code" id="input-payment-postcode" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-country">Country</label>
+                          <select name="country_id" id="input-payment-country" class="form-control">
+                            <option value=""> --- Please Select --- </option>
+                            <option value="244">Aaland Islands</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Albania</option>
+                            <option value="3">Algeria</option>
+                            <option value="4">American Samoa</option>
+                            <option value="5">Andorra</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Anguilla</option>
+                            <option value="8">Antarctica</option>
+                            <option value="9">Antigua and Barbuda</option>
+                            <option value="10">Argentina</option>
+                            <option value="11">Armenia</option>
+                            <option value="12">Aruba</option>
+                            <option value="252">Ascension Island (British)</option>
+                            <option value="13">Australia</option>
+                            <option value="14">Austria</option>
+                            <option value="15">Azerbaijan</option>
+                            <option value="16">Bahamas</option>
+                            <option value="17">Bahrain</option>
+                            <option value="18">Bangladesh</option>
+                            <option value="19">Barbados</option>
+                            <option value="20">Belarus</option>
+                            <option value="21">Belgium</option>
+                            <option value="22">Belize</option>
+                            <option value="23">Benin</option>
+                            <option value="24">Bermuda</option>
+                            <option value="25">Bhutan</option>
+                            <option value="26">Bolivia</option>
+                            <option value="245">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="27">Bosnia and Herzegovina</option>
+                            <option value="28">Botswana</option>
+                            <option value="29">Bouvet Island</option>
+                            <option value="30">Brazil</option>
+                            <option value="31">British Indian Ocean Territory</option>
+                            <option value="32">Brunei Darussalam</option>
+                            <option value="33">Bulgaria</option>
+                            <option value="34">Burkina Faso</option>
+                            <option value="35">Burundi</option>
+                            <option value="36">Cambodia</option>
+                            <option value="37">Cameroon</option>
+                            <option value="38">Canada</option>
+                            <option value="251">Canary Islands</option>
+                            <option value="39">Cape Verde</option>
+                            <option value="40">Cayman Islands</option>
+                            <option value="41">Central African Republic</option>
+                            <option value="42">Chad</option>
+                            <option value="43">Chile</option>
+                            <option value="44">China</option>
+                            <option value="45">Christmas Island</option>
+                            <option value="46">Cocos (Keeling) Islands</option>
+                            <option value="47">Colombia</option>
+                            <option value="48">Comoros</option>
+                            <option value="49">Congo</option>
+                            <option value="50">Cook Islands</option>
+                            <option value="51">Costa Rica</option>
+                            <option value="52">Cote D'Ivoire</option>
+                            <option value="53">Croatia</option>
+                            <option value="54">Cuba</option>
+                            <option value="246">Curacao</option>
+                            <option value="55">Cyprus</option>
+                            <option value="56">Czech Republic</option>
+                            <option value="237">Democratic Republic of Congo</option>
+                            <option value="57">Denmark</option>
+                            <option value="58">Djibouti</option>
+                            <option value="59">Dominica</option>
+                            <option value="60">Dominican Republic</option>
+                            <option value="61">East Timor</option>
+                            <option value="62">Ecuador</option>
+                            <option value="63">Egypt</option>
+                            <option value="64">El Salvador</option>
+                            <option value="65">Equatorial Guinea</option>
+                            <option value="66">Eritrea</option>
+                            <option value="67">Estonia</option>
+                            <option value="68">Ethiopia</option>
+                            <option value="69">Falkland Islands (Malvinas)</option>
+                            <option value="70">Faroe Islands</option>
+                            <option value="71">Fiji</option>
+                            <option value="72">Finland</option>
+                            <option value="74">France, Metropolitan</option>
+                            <option value="75">French Guiana</option>
+                            <option value="76">French Polynesia</option>
+                            <option value="77">French Southern Territories</option>
+                            <option value="126">FYROM</option>
+                            <option value="78">Gabon</option>
+                            <option value="79">Gambia</option>
+                            <option value="80">Georgia</option>
+                            <option value="81">Germany</option>
+                            <option value="82">Ghana</option>
+                            <option value="83">Gibraltar</option>
+                            <option value="84">Greece</option>
+                            <option value="85">Greenland</option>
+                            <option value="86">Grenada</option>
+                            <option value="87">Guadeloupe</option>
+                            <option value="88">Guam</option>
+                            <option value="89">Guatemala</option>
+                            <option value="256">Guernsey</option>
+                            <option value="90">Guinea</option>
+                            <option value="91">Guinea-Bissau</option>
+                            <option value="92">Guyana</option>
+                            <option value="93">Haiti</option>
+                            <option value="94">Heard and Mc Donald Islands</option>
+                            <option value="95">Honduras</option>
+                            <option value="96">Hong Kong</option>
+                            <option value="97">Hungary</option>
+                            <option value="98">Iceland</option>
+                            <option value="99">India</option>
+                            <option value="100">Indonesia</option>
+                            <option value="101">Iran (Islamic Republic of)</option>
+                            <option value="102">Iraq</option>
+                            <option value="103">Ireland</option>
+                            <option value="254">Isle of Man</option>
+                            <option value="104">Israel</option>
+                            <option value="105">Italy</option>
+                            <option value="106">Jamaica</option>
+                            <option value="107">Japan</option>
+                            <option value="257">Jersey</option>
+                            <option value="108">Jordan</option>
+                            <option value="109">Kazakhstan</option>
+                            <option value="110">Kenya</option>
+                            <option value="111">Kiribati</option>
+                            <option value="253">Kosovo, Republic of</option>
+                            <option value="114">Kuwait</option>
+                            <option value="115">Kyrgyzstan</option>
+                            <option value="116">Lao People's Democratic Republic</option>
+                            <option value="117">Latvia</option>
+                            <option value="118">Lebanon</option>
+                            <option value="119">Lesotho</option>
+                            <option value="120">Liberia</option>
+                            <option value="121">Libyan Arab Jamahiriya</option>
+                            <option value="122">Liechtenstein</option>
+                            <option value="123">Lithuania</option>
+                            <option value="124">Luxembourg</option>
+                            <option value="125">Macau</option>
+                            <option value="127">Madagascar</option>
+                            <option value="128">Malawi</option>
+                            <option value="129">Malaysia</option>
+                            <option value="130">Maldives</option>
+                            <option value="131">Mali</option>
+                            <option value="132">Malta</option>
+                            <option value="133">Marshall Islands</option>
+                            <option value="134">Martinique</option>
+                            <option value="135">Mauritania</option>
+                            <option value="136">Mauritius</option>
+                            <option value="137">Mayotte</option>
+                            <option value="138">Mexico</option>
+                            <option value="139">Micronesia, Federated States of</option>
+                            <option value="140">Moldova, Republic of</option>
+                            <option value="141">Monaco</option>
+                            <option value="142">Mongolia</option>
+                            <option value="242">Montenegro</option>
+                            <option value="143">Montserrat</option>
+                            <option value="144">Morocco</option>
+                            <option value="145">Mozambique</option>
+                            <option value="146">Myanmar</option>
+                            <option value="147">Namibia</option>
+                            <option value="148">Nauru</option>
+                            <option value="149">Nepal</option>
+                            <option value="150">Netherlands</option>
+                            <option value="151">Netherlands Antilles</option>
+                            <option value="152">New Caledonia</option>
+                            <option value="153">New Zealand</option>
+                            <option value="154">Nicaragua</option>
+                            <option value="155">Niger</option>
+                            <option value="156">Nigeria</option>
+                            <option value="157">Niue</option>
+                            <option value="158">Norfolk Island</option>
+                            <option value="112">North Korea</option>
+                            <option value="159">Northern Mariana Islands</option>
+                            <option value="160">Norway</option>
+                            <option value="161">Oman</option>
+                            <option value="162">Pakistan</option>
+                            <option value="163">Palau</option>
+                            <option value="247">Palestinian Territory, Occupied</option>
+                            <option value="164">Panama</option>
+                            <option value="165">Papua New Guinea</option>
+                            <option value="166">Paraguay</option>
+                            <option value="167">Peru</option>
+                            <option value="168">Philippines</option>
+                            <option value="169">Pitcairn</option>
+                            <option value="170">Poland</option>
+                            <option value="171">Portugal</option>
+                            <option value="172">Puerto Rico</option>
+                            <option value="173">Qatar</option>
+                            <option value="174">Reunion</option>
+                            <option value="175">Romania</option>
+                            <option value="176">Russian Federation</option>
+                            <option value="177">Rwanda</option>
+                            <option value="178">Saint Kitts and Nevis</option>
+                            <option value="179">Saint Lucia</option>
+                            <option value="180">Saint Vincent and the Grenadines</option>
+                            <option value="181">Samoa</option>
+                            <option value="182">San Marino</option>
+                            <option value="183">Sao Tome and Principe</option>
+                            <option value="184">Saudi Arabia</option>
+                            <option value="185">Senegal</option>
+                            <option value="243">Serbia</option>
+                            <option value="186">Seychelles</option>
+                            <option value="187">Sierra Leone</option>
+                            <option value="188">Singapore</option>
+                            <option value="189">Slovak Republic</option>
+                            <option value="190">Slovenia</option>
+                            <option value="191">Solomon Islands</option>
+                            <option value="192">Somalia</option>
+                            <option value="193">South Africa</option>
+                            <option value="194">South Georgia &amp; South Sandwich Islands</option>
+                            <option value="113">South Korea</option>
+                            <option value="248">South Sudan</option>
+                            <option value="195">Spain</option>
+                            <option value="196">Sri Lanka</option>
+                            <option value="249">St. Barthelemy</option>
+                            <option value="197">St. Helena</option>
+                            <option value="250">St. Martin (French part)</option>
+                            <option value="198">St. Pierre and Miquelon</option>
+                            <option value="199">Sudan</option>
+                            <option value="200">Suriname</option>
+                            <option value="201">Svalbard and Jan Mayen Islands</option>
+                            <option value="202">Swaziland</option>
+                            <option value="203">Sweden</option>
+                            <option value="204">Switzerland</option>
+                            <option value="205">Syrian Arab Republic</option>
+                            <option value="206">Taiwan</option>
+                            <option value="207">Tajikistan</option>
+                            <option value="208">Tanzania, United Republic of</option>
+                            <option value="209">Thailand</option>
+                            <option value="210">Togo</option>
+                            <option value="211">Tokelau</option>
+                            <option value="212">Tonga</option>
+                            <option value="213">Trinidad and Tobago</option>
+                            <option value="255">Tristan da Cunha</option>
+                            <option value="214">Tunisia</option>
+                            <option value="215">Turkey</option>
+                            <option value="216">Turkmenistan</option>
+                            <option value="217">Turks and Caicos Islands</option>
+                            <option value="218">Tuvalu</option>
+                            <option value="219">Uganda</option>
+                            <option value="220">Ukraine</option>
+                            <option value="221">United Arab Emirates</option>
+                            <option value="222" selected="selected">United Kingdom</option>
+                            <option value="223">United States</option>
+                            <option value="224">United States Minor Outlying Islands</option>
+                            <option value="225">Uruguay</option>
+                            <option value="226">Uzbekistan</option>
+                            <option value="227">Vanuatu</option>
+                            <option value="228">Vatican City State (Holy See)</option>
+                            <option value="229">Venezuela</option>
+                            <option value="230">Viet Nam</option>
+                            <option value="231">Virgin Islands (British)</option>
+                            <option value="232">Virgin Islands (U.S.)</option>
+                            <option value="233">Wallis and Futuna Islands</option>
+                            <option value="234">Western Sahara</option>
+                            <option value="235">Yemen</option>
+                            <option value="238">Zambia</option>
+                            <option value="239">Zimbabwe</option>
+                          </select>
+                        </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="input-payment-zone">Region / State</label>
+                          <select name="zone_id" id="input-payment-zone" class="form-control">
+                            <option value=""> --- Please Select --- </option>
+                            <option value="3135">Chang-hua</option>
+                            <option value="3154">Chi-lung</option>
+                            <option value="3136">Chia-i</option>
+                            <option value="3153">Chia-i city</option>
+                            <option value="3155">Hsin-chu</option>
+                            <option value="3137">Hsin-chu</option>
+                            <option value="3138">Hua-lien</option>
+                            <option value="3139">I-lan</option>
+                            <option value="3158">Kao-hsiung city</option>
+                            <option value="3140">Kao-hsiung county</option>
+                            <option value="3141">Kin-men</option>
+                            <option value="3142">Lien-chiang</option>
+                            <option value="3143">Miao-li</option>
+                            <option value="3144">Nan-t'ou</option>
+                            <option value="3145">P'eng-hu</option>
+                            <option value="3146">P'ing-tung</option>
+                            <option value="3156">T'ai-chung</option>
+                            <option value="3147">T'ai-chung</option>
+                            <option value="3157">T'ai-nan</option>
+                            <option value="3148">T'ai-nan</option>
+                            <option value="3159">T'ai-pei city</option>
+                            <option value="3149">T'ai-pei county</option>
+                            <option value="3150">T'ai-tung</option>
+                            <option value="3151">T'ao-yuan</option>
+                            <option value="3152">Yun-lin</option>
+                          </select>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="checkbox">
+                    <label>     <input type="checkbox" name="shipping_address" value="1" checked="checked">
+                    My delivery and billing addresses are the same.</label>
+                  </div>
+                  <div class="buttons">
+                    <div class="pull-right">
+                      <input type="button" value="Continue" id="button-guest" data-loading-text="Loading..." class="btn btn-primary">
+                    </div>
+                  </div>
+                  <script type="text/javascript"><!--
+                    // Sort the custom fields
+                    $('#account .form-group[data-sort]').detach().each(function() {
+                    	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
+                    		$('#account .form-group').eq($(this).attr('data-sort')).before(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') > $('#account .form-group').length) {
+                    		$('#account .form-group:last').after(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') == $('#account .form-group').length) {
+                    		$('#account .form-group:last').after(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') < -$('#account .form-group').length) {
+                    		$('#account .form-group:first').before(this);
+                    	}
+                    });
+                    
+                    $('#address .form-group[data-sort]').detach().each(function() {
+                    	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#address .form-group').length) {
+                    		$('#address .form-group').eq($(this).attr('data-sort')).before(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') > $('#address .form-group').length) {
+                    		$('#address .form-group:last').after(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') == $('#address .form-group').length) {
+                    		$('#address .form-group:last').after(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') < -$('#address .form-group').length) {
+                    		$('#address .form-group:first').before(this);
+                    	}
+                    });
+                    
+                    $('#collapse-payment-address input[name=\'customer_group_id\']').on('change', function() {
+                    	$.ajax({
+                    		url: 'index.php?route=checkout/checkout/customfield&customer_group_id=' + this.value,
+                    		dataType: 'json',
+                    		success: function(json) {
+                    			$('#collapse-payment-address .custom-field').hide();
+                    			$('#collapse-payment-address .custom-field').removeClass('required');
+                    
+                    			for (i = 0; i < json.length; i++) {
+                    				custom_field = json[i];
+                    
+                    				$('#payment-custom-field' + custom_field['custom_field_id']).show();
+                    
+                    				if (custom_field['required']) {
+                    					$('#payment-custom-field' + custom_field['custom_field_id']).addClass('required');
+                    				} else {
+                    					$('#payment-custom-field' + custom_field['custom_field_id']).removeClass('required');
+                    				}
+                    			}
+                    		},
+                    		error: function(xhr, ajaxOptions, thrownError) {
+                    			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    		}
+                    	});
+                    });
+                    
+                    $('#collapse-payment-address input[name=\'customer_group_id\']:checked').trigger('change');
+                    //-->
+                  </script> 
+                  <script type="text/javascript"><!--
+                    $('#collapse-payment-address button[id^=\'button-payment-custom-field\']').on('click', function() {
+                    	var node = this;
+                    
+                    	$('#form-upload').remove();
+                    
+                    	$('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+                    
+                    	$('#form-upload input[name=\'file\']').trigger('click');
+                    
+                    	if (typeof timer != 'undefined') {
+                        	clearInterval(timer);
+                    	}
+                    
+                    	timer = setInterval(function() {
+                    		if ($('#form-upload input[name=\'file\']').val() != '') {
+                    			clearInterval(timer);
+                    
+                    			$.ajax({
+                    				url: 'index.php?route=tool/upload',
+                    				type: 'post',
+                    				dataType: 'json',
+                    				data: new FormData($('#form-upload')[0]),
+                    				cache: false,
+                    				contentType: false,
+                    				processData: false,
+                    				beforeSend: function() {
+                    					$(node).button('loading');
+                    				},
+                    				complete: function() {
+                    					$(node).button('reset');
+                    				},
+                    				success: function(json) {
+                    					$(node).parent().find('.text-danger').remove();
+                    
+                    					if (json['error']) {
+                    						$(node).parent().find('input[name^=\'custom_field\']').after('<div class="text-danger">' + json['error'] + '</div>');
+                    					}
+                    
+                    					if (json['success']) {
+                    						alert(json['success']);
+                    
+                    						$(node).parent().find('input[name^=\'custom_field\']').val(json['code']);
+                    					}
+                    				},
+                    				error: function(xhr, ajaxOptions, thrownError) {
+                    					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    				}
+                    			});
+                    		}
+                    	}, 500);
+                    });
+                    //-->
+                  </script>
+                  <script type="text/javascript"><!--
+                    $('.date').datetimepicker({
+                    	language: 'en-gb',
+                    	pickTime: false
+                    });
+                    
+                    $('.time').datetimepicker({
+                    	language: 'en-gb',
+                    	pickDate: false
+                    });
+                    
+                    $('.datetime').datetimepicker({
+                    	language: 'en-gb',
+                    	pickDate: true,
+                    	pickTime: true
+                    });
+                    //-->
+                  </script> 
+                  <script type="text/javascript"><!--
+                    $('#collapse-payment-address select[name=\'country_id\']').on('change', function() {
+                    	$.ajax({
+                    		url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
+                    		dataType: 'json',
+                    		beforeSend: function() {
+                    			$('#collapse-payment-address select[name=\'country_id\']').prop('disabled', true);
+                    		},
+                    		complete: function() {
+                    			$('#collapse-payment-address select[name=\'country_id\']').prop('disabled', false);
+                    		},
+                    		success: function(json) {
+                    			if (json['postcode_required'] == '1') {
+                    				$('#collapse-payment-address input[name=\'postcode\']').parent().parent().addClass('required');
+                    			} else {
+                    				$('#collapse-payment-address input[name=\'postcode\']').parent().parent().removeClass('required');
+                    			}
+                    
+                    			html = '<option value=""> --- Please Select --- </option>';
+                    
+                    			if (json['zone'] && json['zone'] != '') {
+                    				for (i = 0; i < json['zone'].length; i++) {
+                    					html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+                    
+                    					if (json['zone'][i]['zone_id'] == '') {
+                    						html += ' selected="selected"';
+                    					}
+                    
+                    					html += '>' + json['zone'][i]['name'] + '</option>';
+                    				}
+                    			} else {
+                    				html += '<option value="0" selected="selected"> --- None --- </option>';
+                    			}
+                    
+                    			$('#collapse-payment-address select[name=\'zone_id\']').html(html);
+                    		},
+                    		error: function(xhr, ajaxOptions, thrownError) {
+                    			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    		}
+                    	});
+                    });
+                    
+                    $('#collapse-payment-address select[name=\'country_id\']').trigger('change');
+                    //-->
+                  </script> 
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a></h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapse-shipping-address" aria-expanded="false">
+                <div class="panel-body">
+                  <form class="form-horizontal">
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-shipping-firstname">First Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="firstname" value="ferdi" placeholder="First Name" id="input-shipping-firstname" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-shipping-lastname">Last Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="lastname" value="Ansyah" placeholder="Last Name" id="input-shipping-lastname" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-shipping-company">Company</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="company" value="2000" placeholder="Company" id="input-shipping-company" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-shipping-address-1">Address 1</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="address_1" value="Kp.Paledang Rt.04 Rw.12 Desa.Bojongkunci Kec.Pameungpeuk Kab.Bandung" placeholder="Address 1" id="input-shipping-address-1" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-shipping-address-2">Address 2</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="address_2" value="" placeholder="Address 2" id="input-shipping-address-2" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-shipping-city">City</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="city" value="Kab. Bandung" placeholder="City" id="input-shipping-city" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-shipping-postcode">Post Code</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="postcode" value="40376" placeholder="Post Code" id="input-shipping-postcode" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-shipping-country">Country</label>
+                      <div class="col-sm-10">
+                        <select name="country_id" id="input-shipping-country" class="form-control">
+                          <option value=""> --- Please Select --- </option>
+                          <option value="244">Aaland Islands</option>
+                          <option value="1">Afghanistan</option>
+                          <option value="2">Albania</option>
+                          <option value="3">Algeria</option>
+                          <option value="4">American Samoa</option>
+                          <option value="5">Andorra</option>
+                          <option value="6">Angola</option>
+                          <option value="7">Anguilla</option>
+                          <option value="8">Antarctica</option>
+                          <option value="9">Antigua and Barbuda</option>
+                          <option value="10">Argentina</option>
+                          <option value="11">Armenia</option>
+                          <option value="12">Aruba</option>
+                          <option value="252">Ascension Island (British)</option>
+                          <option value="13">Australia</option>
+                          <option value="14">Austria</option>
+                          <option value="15">Azerbaijan</option>
+                          <option value="16">Bahamas</option>
+                          <option value="17">Bahrain</option>
+                          <option value="18">Bangladesh</option>
+                          <option value="19">Barbados</option>
+                          <option value="20">Belarus</option>
+                          <option value="21">Belgium</option>
+                          <option value="22">Belize</option>
+                          <option value="23">Benin</option>
+                          <option value="24">Bermuda</option>
+                          <option value="25">Bhutan</option>
+                          <option value="26">Bolivia</option>
+                          <option value="245">Bonaire, Sint Eustatius and Saba</option>
+                          <option value="27">Bosnia and Herzegovina</option>
+                          <option value="28">Botswana</option>
+                          <option value="29">Bouvet Island</option>
+                          <option value="30">Brazil</option>
+                          <option value="31">British Indian Ocean Territory</option>
+                          <option value="32">Brunei Darussalam</option>
+                          <option value="33">Bulgaria</option>
+                          <option value="34">Burkina Faso</option>
+                          <option value="35">Burundi</option>
+                          <option value="36">Cambodia</option>
+                          <option value="37">Cameroon</option>
+                          <option value="38">Canada</option>
+                          <option value="251">Canary Islands</option>
+                          <option value="39">Cape Verde</option>
+                          <option value="40">Cayman Islands</option>
+                          <option value="41">Central African Republic</option>
+                          <option value="42">Chad</option>
+                          <option value="43">Chile</option>
+                          <option value="44">China</option>
+                          <option value="45">Christmas Island</option>
+                          <option value="46">Cocos (Keeling) Islands</option>
+                          <option value="47">Colombia</option>
+                          <option value="48">Comoros</option>
+                          <option value="49">Congo</option>
+                          <option value="50">Cook Islands</option>
+                          <option value="51">Costa Rica</option>
+                          <option value="52">Cote D'Ivoire</option>
+                          <option value="53">Croatia</option>
+                          <option value="54">Cuba</option>
+                          <option value="246">Curacao</option>
+                          <option value="55">Cyprus</option>
+                          <option value="56">Czech Republic</option>
+                          <option value="237">Democratic Republic of Congo</option>
+                          <option value="57">Denmark</option>
+                          <option value="58">Djibouti</option>
+                          <option value="59">Dominica</option>
+                          <option value="60">Dominican Republic</option>
+                          <option value="61">East Timor</option>
+                          <option value="62">Ecuador</option>
+                          <option value="63">Egypt</option>
+                          <option value="64">El Salvador</option>
+                          <option value="65">Equatorial Guinea</option>
+                          <option value="66">Eritrea</option>
+                          <option value="67">Estonia</option>
+                          <option value="68">Ethiopia</option>
+                          <option value="69">Falkland Islands (Malvinas)</option>
+                          <option value="70">Faroe Islands</option>
+                          <option value="71">Fiji</option>
+                          <option value="72">Finland</option>
+                          <option value="74">France, Metropolitan</option>
+                          <option value="75">French Guiana</option>
+                          <option value="76">French Polynesia</option>
+                          <option value="77">French Southern Territories</option>
+                          <option value="126">FYROM</option>
+                          <option value="78">Gabon</option>
+                          <option value="79">Gambia</option>
+                          <option value="80">Georgia</option>
+                          <option value="81">Germany</option>
+                          <option value="82">Ghana</option>
+                          <option value="83">Gibraltar</option>
+                          <option value="84">Greece</option>
+                          <option value="85">Greenland</option>
+                          <option value="86">Grenada</option>
+                          <option value="87">Guadeloupe</option>
+                          <option value="88">Guam</option>
+                          <option value="89">Guatemala</option>
+                          <option value="256">Guernsey</option>
+                          <option value="90">Guinea</option>
+                          <option value="91">Guinea-Bissau</option>
+                          <option value="92">Guyana</option>
+                          <option value="93">Haiti</option>
+                          <option value="94">Heard and Mc Donald Islands</option>
+                          <option value="95">Honduras</option>
+                          <option value="96">Hong Kong</option>
+                          <option value="97">Hungary</option>
+                          <option value="98">Iceland</option>
+                          <option value="99">India</option>
+                          <option value="100">Indonesia</option>
+                          <option value="101">Iran (Islamic Republic of)</option>
+                          <option value="102">Iraq</option>
+                          <option value="103">Ireland</option>
+                          <option value="254">Isle of Man</option>
+                          <option value="104">Israel</option>
+                          <option value="105">Italy</option>
+                          <option value="106">Jamaica</option>
+                          <option value="107">Japan</option>
+                          <option value="257">Jersey</option>
+                          <option value="108">Jordan</option>
+                          <option value="109">Kazakhstan</option>
+                          <option value="110">Kenya</option>
+                          <option value="111">Kiribati</option>
+                          <option value="253">Kosovo, Republic of</option>
+                          <option value="114">Kuwait</option>
+                          <option value="115">Kyrgyzstan</option>
+                          <option value="116">Lao People's Democratic Republic</option>
+                          <option value="117">Latvia</option>
+                          <option value="118">Lebanon</option>
+                          <option value="119">Lesotho</option>
+                          <option value="120">Liberia</option>
+                          <option value="121">Libyan Arab Jamahiriya</option>
+                          <option value="122">Liechtenstein</option>
+                          <option value="123">Lithuania</option>
+                          <option value="124">Luxembourg</option>
+                          <option value="125">Macau</option>
+                          <option value="127">Madagascar</option>
+                          <option value="128">Malawi</option>
+                          <option value="129">Malaysia</option>
+                          <option value="130">Maldives</option>
+                          <option value="131">Mali</option>
+                          <option value="132">Malta</option>
+                          <option value="133">Marshall Islands</option>
+                          <option value="134">Martinique</option>
+                          <option value="135">Mauritania</option>
+                          <option value="136">Mauritius</option>
+                          <option value="137">Mayotte</option>
+                          <option value="138">Mexico</option>
+                          <option value="139">Micronesia, Federated States of</option>
+                          <option value="140">Moldova, Republic of</option>
+                          <option value="141">Monaco</option>
+                          <option value="142">Mongolia</option>
+                          <option value="242">Montenegro</option>
+                          <option value="143">Montserrat</option>
+                          <option value="144">Morocco</option>
+                          <option value="145">Mozambique</option>
+                          <option value="146">Myanmar</option>
+                          <option value="147">Namibia</option>
+                          <option value="148">Nauru</option>
+                          <option value="149">Nepal</option>
+                          <option value="150">Netherlands</option>
+                          <option value="151">Netherlands Antilles</option>
+                          <option value="152">New Caledonia</option>
+                          <option value="153">New Zealand</option>
+                          <option value="154">Nicaragua</option>
+                          <option value="155">Niger</option>
+                          <option value="156">Nigeria</option>
+                          <option value="157">Niue</option>
+                          <option value="158">Norfolk Island</option>
+                          <option value="112">North Korea</option>
+                          <option value="159">Northern Mariana Islands</option>
+                          <option value="160">Norway</option>
+                          <option value="161">Oman</option>
+                          <option value="162">Pakistan</option>
+                          <option value="163">Palau</option>
+                          <option value="247">Palestinian Territory, Occupied</option>
+                          <option value="164">Panama</option>
+                          <option value="165">Papua New Guinea</option>
+                          <option value="166">Paraguay</option>
+                          <option value="167">Peru</option>
+                          <option value="168">Philippines</option>
+                          <option value="169">Pitcairn</option>
+                          <option value="170">Poland</option>
+                          <option value="171">Portugal</option>
+                          <option value="172">Puerto Rico</option>
+                          <option value="173">Qatar</option>
+                          <option value="174">Reunion</option>
+                          <option value="175">Romania</option>
+                          <option value="176">Russian Federation</option>
+                          <option value="177">Rwanda</option>
+                          <option value="178">Saint Kitts and Nevis</option>
+                          <option value="179">Saint Lucia</option>
+                          <option value="180">Saint Vincent and the Grenadines</option>
+                          <option value="181">Samoa</option>
+                          <option value="182">San Marino</option>
+                          <option value="183">Sao Tome and Principe</option>
+                          <option value="184">Saudi Arabia</option>
+                          <option value="185">Senegal</option>
+                          <option value="243">Serbia</option>
+                          <option value="186">Seychelles</option>
+                          <option value="187">Sierra Leone</option>
+                          <option value="188">Singapore</option>
+                          <option value="189">Slovak Republic</option>
+                          <option value="190">Slovenia</option>
+                          <option value="191">Solomon Islands</option>
+                          <option value="192">Somalia</option>
+                          <option value="193">South Africa</option>
+                          <option value="194">South Georgia &amp; South Sandwich Islands</option>
+                          <option value="113">South Korea</option>
+                          <option value="248">South Sudan</option>
+                          <option value="195">Spain</option>
+                          <option value="196">Sri Lanka</option>
+                          <option value="249">St. Barthelemy</option>
+                          <option value="197">St. Helena</option>
+                          <option value="250">St. Martin (French part)</option>
+                          <option value="198">St. Pierre and Miquelon</option>
+                          <option value="199">Sudan</option>
+                          <option value="200">Suriname</option>
+                          <option value="201">Svalbard and Jan Mayen Islands</option>
+                          <option value="202">Swaziland</option>
+                          <option value="203">Sweden</option>
+                          <option value="204">Switzerland</option>
+                          <option value="205">Syrian Arab Republic</option>
+                          <option value="206" selected="selected">Taiwan</option>
+                          <option value="207">Tajikistan</option>
+                          <option value="208">Tanzania, United Republic of</option>
+                          <option value="209">Thailand</option>
+                          <option value="210">Togo</option>
+                          <option value="211">Tokelau</option>
+                          <option value="212">Tonga</option>
+                          <option value="213">Trinidad and Tobago</option>
+                          <option value="255">Tristan da Cunha</option>
+                          <option value="214">Tunisia</option>
+                          <option value="215">Turkey</option>
+                          <option value="216">Turkmenistan</option>
+                          <option value="217">Turks and Caicos Islands</option>
+                          <option value="218">Tuvalu</option>
+                          <option value="219">Uganda</option>
+                          <option value="220">Ukraine</option>
+                          <option value="221">United Arab Emirates</option>
+                          <option value="222">United Kingdom</option>
+                          <option value="223">United States</option>
+                          <option value="224">United States Minor Outlying Islands</option>
+                          <option value="225">Uruguay</option>
+                          <option value="226">Uzbekistan</option>
+                          <option value="227">Vanuatu</option>
+                          <option value="228">Vatican City State (Holy See)</option>
+                          <option value="229">Venezuela</option>
+                          <option value="230">Viet Nam</option>
+                          <option value="231">Virgin Islands (British)</option>
+                          <option value="232">Virgin Islands (U.S.)</option>
+                          <option value="233">Wallis and Futuna Islands</option>
+                          <option value="234">Western Sahara</option>
+                          <option value="235">Yemen</option>
+                          <option value="238">Zambia</option>
+                          <option value="239">Zimbabwe</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-shipping-zone">Region / State</label>
+                      <div class="col-sm-10">
+                        <select name="zone_id" id="input-shipping-zone" class="form-control">
+                          <option value=""> --- Please Select --- </option>
+                          <option value="3135">Chang-hua</option>
+                          <option value="3154">Chi-lung</option>
+                          <option value="3136">Chia-i</option>
+                          <option value="3153">Chia-i city</option>
+                          <option value="3155">Hsin-chu</option>
+                          <option value="3137">Hsin-chu</option>
+                          <option value="3138">Hua-lien</option>
+                          <option value="3139">I-lan</option>
+                          <option value="3158">Kao-hsiung city</option>
+                          <option value="3140">Kao-hsiung county</option>
+                          <option value="3141">Kin-men</option>
+                          <option value="3142">Lien-chiang</option>
+                          <option value="3143">Miao-li</option>
+                          <option value="3144">Nan-t'ou</option>
+                          <option value="3145">P'eng-hu</option>
+                          <option value="3146">P'ing-tung</option>
+                          <option value="3156">T'ai-chung</option>
+                          <option value="3147">T'ai-chung</option>
+                          <option value="3157">T'ai-nan</option>
+                          <option value="3148">T'ai-nan</option>
+                          <option value="3159">T'ai-pei city</option>
+                          <option value="3149">T'ai-pei county</option>
+                          <option value="3150">T'ai-tung</option>
+                          <option value="3151">T'ao-yuan</option>
+                          <option value="3152">Yun-lin</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="buttons">
+                      <div class="pull-right">
+                        <input type="button" value="Continue" id="button-guest-shipping" data-loading-text="Loading..." class="btn btn-primary">
+                      </div>
+                    </div>
+                  </form>
+                  <script type="text/javascript"><!--
+                    // Sort the custom fields
+                    $('#collapse-shipping-address .form-group[data-sort]').detach().each(function() {
+                    	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#collapse-shipping-address .form-group').length-2) {
+                    		$('#collapse-shipping-address .form-group').eq(parseInt($(this).attr('data-sort'))+2).before(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') > $('#collapse-shipping-address .form-group').length-2) {
+                    		$('#collapse-shipping-address .form-group:last').after(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') == $('#collapse-shipping-address .form-group').length-2) {
+                    		$('#collapse-shipping-address .form-group:last').after(this);
+                    	}
+                    
+                    	if ($(this).attr('data-sort') < -$('#collapse-shipping-address .form-group').length-2) {
+                    		$('#collapse-shipping-address .form-group:first').before(this);
+                    	}
+                    });
+                    //-->
+                  </script> 
+                  <script type="text/javascript"><!--
+                    $('#collapse-shipping-address button[id^=\'button-shipping-custom-field\']').on('click', function() {
+                    	var node = this;
+                    
+                    	$('#form-upload').remove();
+                    
+                    	$('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+                    
+                    	$('#form-upload input[name=\'file\']').trigger('click');
+                    
+                    	if (typeof timer != 'undefined') {
+                        	clearInterval(timer);
+                    	}
+                    
+                    	timer = setInterval(function() {
+                    		if ($('#form-upload input[name=\'file\']').val() != '') {
+                    			clearInterval(timer);
+                    
+                    			$.ajax({
+                    				url: 'index.php?route=tool/upload',
+                    				type: 'post',
+                    				dataType: 'json',
+                    				data: new FormData($('#form-upload')[0]),
+                    				cache: false,
+                    				contentType: false,
+                    				processData: false,
+                    				beforeSend: function() {
+                    					$(node).button('loading');
+                    				},
+                    				complete: function() {
+                    					$(node).button('reset');
+                    				},
+                    				success: function(json) {
+                    					$(node).parent().find('.text-danger').remove();
+                    
+                    					if (json['error']) {
+                    						$(node).parent().find('input[name^=\'custom_field\']').after('<div class="text-danger">' + json['error'] + '</div>');
+                    					}
+                    
+                    					if (json['success']) {
+                    						alert(json['success']);
+                    
+                    						$(node).parent().find('input[name^=\'custom_field\']').attr('value', json['file']);
+                    					}
+                    				},
+                    				error: function(xhr, ajaxOptions, thrownError) {
+                    					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    				}
+                    			});
+                    		}
+                    	}, 500);
+                    });
+                    //-->
+                  </script> 
+                  <script type="text/javascript"><!--
+                    $('.date').datetimepicker({
+                    	language: 'en-gb',
+                    	pickTime: false
+                    });
+                    
+                    $('.time').datetimepicker({
+                    	language: 'en-gb',
+                    	pickDate: false
+                    });
+                    
+                    $('.datetime').datetimepicker({
+                    	language: 'en-gb',
+                    	pickDate: true,
+                    	pickTime: true
+                    });
+                    //-->
+                  </script> 
+                  <script type="text/javascript"><!--
+                    $('#collapse-shipping-address select[name=\'country_id\']').on('change', function() {
+                    	$.ajax({
+                    		url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
+                    		dataType: 'json',
+                    		beforeSend: function() {
+                    			$('#collapse-shipping-address select[name=\'country_id\']').prop('disabled', true);
+                    		},
+                    		complete: function() {
+                    			$('#collapse-shipping-address select[name=\'country_id\']').prop('disabled', false);
+                    		},
+                    		success: function(json) {
+                    			if (json['postcode_required'] == '1') {
+                    				$('#collapse-shipping-address input[name=\'postcode\']').parent().parent().addClass('required');
+                    			} else {
+                    				$('#collapse-shipping-address input[name=\'postcode\']').parent().parent().removeClass('required');
+                    			}
+                    
+                    			html = '<option value=""> --- Please Select --- </option>';
+                    
+                    			if (json['zone'] && json['zone'] != '') {
+                    				for (i = 0; i < json['zone'].length; i++) {
+                    					html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+                    
+                    					if (json['zone'][i]['zone_id'] == '3560') {
+                    						html += ' selected="selected"';
+                              			}
+                    
+                    					html += '>' + json['zone'][i]['name'] + '</option>';
+                    				}
+                    			} else {
+                    				html += '<option value="0" selected="selected"> --- None --- </option>';
+                    			}
+                    
+                    			$('#collapse-shipping-address select[name=\'zone_id\']').html(html);
+                    		},
+                    		error: function(xhr, ajaxOptions, thrownError) {
+                    			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    		}
+                    	});
+                    });
+                    
+                    $('#collapse-shipping-address select[name=\'country_id\']').trigger('change');
+                    //-->
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a></h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapse-shipping-method" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <p>Please select the preferred shipping method to use on this order.</p>
+                  <p><strong>Flat Rate</strong></p>
+                  <div class="radio">
+                    <label>         <input type="radio" name="shipping_method" value="flat.flat" checked="checked">
+                    Flat Shipping Rate - $5.00</label>
+                  </div>
+                  <p><strong>Add Comments About Your Order</strong></p>
+                  <p>
+                    <textarea name="comment" rows="8" class="form-control"></textarea>
+                  </p>
+                  <div class="buttons">
+                    <div class="pull-right">
+                      <input type="button" value="Continue" id="button-shipping-method" data-loading-text="Loading..." class="btn btn-primary">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#collapse-payment-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 5: Payment Method <i class="fa fa-caret-down"></i></a></h4>
+              </div>
+              <div class="panel-collapse collapse" id="collapse-payment-method" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <p>Please select the preferred payment method to use on this order.</p>
+                  <div class="radio">
+                    <label>        <input type="radio" name="payment_method" value="cod" checked="checked">
+                    Cash On Delivery
+                    </label>
+                  </div>
+                  <p><strong>Add Comments About Your Order</strong></p>
+                  <p>
+                    <textarea name="comment" rows="8" class="form-control">ssss</textarea>
+                  </p>
+                  <div class="buttons">
+                    <div class="pull-right">I have read and agree to the <a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/information/agree&amp;information_id=5" class="agree"><b>Terms &amp; Conditions</b></a>
+                      <input type="checkbox" name="agree" value="1">
+                      &nbsp;
+                      <input type="button" value="Continue" id="button-payment-method" data-loading-text="Loading..." class="btn btn-primary">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#collapse-checkout-confirm" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Step 6: Confirm Order <i class="fa fa-caret-down"></i></a></h4>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-checkout-confirm" aria-expanded="true" style="">
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <td class="text-left">Product Name</td>
+                          <td class="text-left">Model</td>
+                          <td class="text-right">Quantity</td>
+                          <td class="text-right">Unit Price</td>
+                          <td class="text-right">Total</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-left"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/product&amp;product_id=51">aenean dignissim</a>  <br>
+                            &nbsp;<small> - Delivery Date: 2011-04-22</small>         
+                          </td>
+                          <td class="text-left">Product 21</td>
+                          <td class="text-right">1</td>
+                          <td class="text-right">$48.00</td>
+                          <td class="text-right">$48.00</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Sub-Total:</strong></td>
+                          <td class="text-right">$48.00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Flat Shipping Rate:</strong></td>
+                          <td class="text-right">$5.00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Total:</strong></td>
+                          <td class="text-right">$53.00</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <div class="buttons">
+                    <div class="pull-right">
+                      <input type="button" value="Confirm Order" id="button-confirm" data-loading-text="Loading..." class="btn btn-primary">
+                    </div>
+                  </div>
+                  <script type="text/javascript"><!--
+                    $('#button-confirm').on('click', function() {
+                    	$.ajax({
+                    		url: 'index.php?route=extension/payment/cod/confirm',
+                    		dataType: 'json',
+                    		beforeSend: function() {
+                    			$('#button-confirm').button('loading');
+                    		},
+                    		complete: function() {
+                    			$('#button-confirm').button('reset');
+                    		},
+                    		success: function(json) {
+                    			if (json['redirect']) {
+                    				location = json['redirect'];	
+                    			}
+                    		},
+                    		error: function(xhr, ajaxOptions, thrownError) {
+                    			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    		}
+                    	});
+                    });
+                    //-->
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript"><!--
+      $(document).on('change', 'input[name=\'account\']', function() {
+      	if ($('#collapse-payment-address').parent().find('.panel-heading .panel-title > *').is('a')) {
+      		if (this.value == 'register') {
+      			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Account &amp; Billing Details <i class="fa fa-caret-down"></i></a>');
+      		} else {
+      			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Billing Details <i class="fa fa-caret-down"></i></a>');
+      		}
+      	} else {
+      		if (this.value == 'register') {
+      			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('Step 2: Account &amp; Billing Details');
+      		} else {
+      			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('Step 2: Billing Details');
+      		}
+      	}
+      });
+      
+      $(document).ready(function() {
+          $.ajax({
+              url: 'index.php?route=checkout/login',
+              dataType: 'html',
+              success: function(html) {
+                 $('#collapse-checkout-option .panel-body').html(html);
+      
+      			$('#collapse-checkout-option').parent().find('.panel-heading .panel-title').html('<a href="#collapse-checkout-option" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 1: Checkout Options <i class="fa fa-caret-down"></i></a>');
+      
+      			$('a[href=\'#collapse-checkout-option\']').trigger('click');
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Checkout
+      $(document).delegate('#button-account', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/' + $('input[name=\'account\']:checked').val(),
+              dataType: 'html',
+              beforeSend: function() {
+              	$('#button-account').button('loading');
+      		},
+              complete: function() {
+      			$('#button-account').button('reset');
+              },
+              success: function(html) {
+                  $('.alert-dismissible, .text-danger').remove();
+      			$('.form-group').removeClass('has-error');
+      
+                  $('#collapse-payment-address .panel-body').html(html);
+      
+      			if ($('input[name=\'account\']:checked').val() == 'register') {
+      				$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Account &amp; Billing Details <i class="fa fa-caret-down"></i></a>');
+      			} else {
+      				$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Billing Details <i class="fa fa-caret-down"></i></a>');
+      			}
+      
+      			$('a[href=\'#collapse-payment-address\']').trigger('click');
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Login
+      $(document).delegate('#button-login', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/login/save',
+              type: 'post',
+              data: $('#collapse-checkout-option :input'),
+              dataType: 'json',
+              beforeSend: function() {
+              	$('#button-login').button('loading');
+      		},
+              complete: function() {
+                  $('#button-login').button('reset');
+              },
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+                  $('.form-group').removeClass('has-error');
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#collapse-checkout-option .panel-body').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+      
+      				// Highlight any found errors
+      				$('input[name=\'email\']').parent().addClass('has-error');
+      				$('input[name=\'password\']').parent().addClass('has-error');
+      		   }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Register
+      $(document).delegate('#button-register', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/register/save',
+              type: 'post',
+              data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address textarea, #collapse-payment-address select'),
+              dataType: 'json',
+              beforeSend: function() {
+      			$('#button-register').button('loading');
+      		},
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+                  $('.form-group').removeClass('has-error');
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#button-register').button('reset');
+      
+                      if (json['error']['warning']) {
+                          $('#collapse-payment-address .panel-body').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+      
+      				for (i in json['error']) {
+      					var element = $('#input-payment-' + i.replace('_', '-'));
+      
+      					if ($(element).parent().hasClass('input-group')) {
+      						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					} else {
+      						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					}
+      				}
+      
+      				// Highlight any found errors
+      				$('.text-danger').parent().addClass('has-error');
+                  } else {
+                                      var shipping_address = $('#payment-address input[name=\'shipping_address\']:checked').prop('value');
+      
+                      if (shipping_address) {
+                          $.ajax({
+                              url: 'index.php?route=checkout/shipping_method',
+                              dataType: 'html',
+                              success: function(html) {
+      							// Add the shipping address
+                                  $.ajax({
+                                      url: 'index.php?route=checkout/shipping_address',
+                                      dataType: 'html',
+                                      success: function(html) {
+                                          $('#collapse-shipping-address .panel-body').html(html);
+      
+      									$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+                                      },
+                                      error: function(xhr, ajaxOptions, thrownError) {
+                                          alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                                      }
+                                  });
+      
+      							$('#collapse-shipping-method .panel-body').html(html);
+      
+      							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
+      
+         							$('a[href=\'#collapse-shipping-method\']').trigger('click');
+      
+      							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+      							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                              },
+                              error: function(xhr, ajaxOptions, thrownError) {
+                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                              }
+                          });
+                      } else {
+                          $.ajax({
+                              url: 'index.php?route=checkout/shipping_address',
+                              dataType: 'html',
+                              success: function(html) {
+                                  $('#collapse-shipping-address .panel-body').html(html);
+      
+      							$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+      
+      							$('a[href=\'#collapse-shipping-address\']').trigger('click');
+      
+      							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+      							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                              },
+                              error: function(xhr, ajaxOptions, thrownError) {
+                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                              }
+                          });
+                      }
+                      
+                      $.ajax({
+                          url: 'index.php?route=checkout/payment_address',
+                          dataType: 'html',
+                          complete: function() {
+                              $('#button-register').button('reset');
+                          },
+                          success: function(html) {
+                              $('#collapse-payment-address .panel-body').html(html);
+      
+      						$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Billing Details <i class="fa fa-caret-down"></i></a>');
+                          },
+                          error: function(xhr, ajaxOptions, thrownError) {
+                              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                          }
+                      });
+                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Payment Address
+      $(document).delegate('#button-payment-address', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/payment_address/save',
+              type: 'post',
+              data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address textarea, #collapse-payment-address select'),
+              dataType: 'json',
+              beforeSend: function() {
+              	$('#button-payment-address').button('loading');
+      		},
+              complete: function() {
+      			$('#button-payment-address').button('reset');
+              },
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+      			$('.form-group').removeClass('has-error');
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      if (json['error']['warning']) {
+                          $('#collapse-payment-address .panel-body').prepend('<div class="alert alert-warning alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+      
+      				for (i in json['error']) {
+      					var element = $('#input-payment-' + i.replace('_', '-'));
+      
+      					if ($(element).parent().hasClass('input-group')) {
+      						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					} else {
+      						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					}
+      				}
+      
+      				// Highlight any found errors
+      				$('.text-danger').parent().parent().addClass('has-error');
+                  } else {
+                                      $.ajax({
+                          url: 'index.php?route=checkout/shipping_address',
+                          dataType: 'html',
+                          success: function(html) {
+                              $('#collapse-shipping-address .panel-body').html(html);
+      
+      						$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+      
+      						$('a[href=\'#collapse-shipping-address\']').trigger('click');
+      
+      						$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+      						$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                          },
+                          error: function(xhr, ajaxOptions, thrownError) {
+                              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                          }
+                      }).done(function() {
+      					$.ajax({
+      						url: 'index.php?route=checkout/payment_address',
+      						dataType: 'html',
+      						success: function(html) {
+      							$('#collapse-payment-address .panel-body').html(html);
+      						},
+      						error: function(xhr, ajaxOptions, thrownError) {
+      							alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      						}
+      					});
+      				});
+                                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Shipping Address
+      $(document).delegate('#button-shipping-address', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/shipping_address/save',
+              type: 'post',
+              data: $('#collapse-shipping-address input[type=\'text\'], #collapse-shipping-address input[type=\'date\'], #collapse-shipping-address input[type=\'datetime-local\'], #collapse-shipping-address input[type=\'time\'], #collapse-shipping-address input[type=\'password\'], #collapse-shipping-address input[type=\'checkbox\']:checked, #collapse-shipping-address input[type=\'radio\']:checked, #collapse-shipping-address textarea, #collapse-shipping-address select'),
+              dataType: 'json',
+              beforeSend: function() {
+      			$('#button-shipping-address').button('loading');
+      	    },
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+      			$('.form-group').removeClass('has-error');
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#button-shipping-address').button('reset');
+      
+                      if (json['error']['warning']) {
+                          $('#collapse-shipping-address .panel-body').prepend('<div class="alert alert-warning alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+      
+      				for (i in json['error']) {
+      					var element = $('#input-shipping-' + i.replace('_', '-'));
+      
+      					if ($(element).parent().hasClass('input-group')) {
+      						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					} else {
+      						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					}
+      				}
+      
+      				// Highlight any found errors
+      				$('.text-danger').parent().parent().addClass('has-error');
+                  } else {
+                      $.ajax({
+                          url: 'index.php?route=checkout/shipping_method',
+                          dataType: 'html',
+                          complete: function() {
+                              $('#button-shipping-address').button('reset');
+                          },
+                          success: function(html) {
+                              $('#collapse-shipping-method .panel-body').html(html);
+      
+      						$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
+      
+      						$('a[href=\'#collapse-shipping-method\']').trigger('click');
+      
+      						$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+      						
+                              $.ajax({
+                                  url: 'index.php?route=checkout/shipping_address',
+                                  dataType: 'html',
+                                  success: function(html) {
+                                      $('#collapse-shipping-address .panel-body').html(html);
+                                  },
+                                  error: function(xhr, ajaxOptions, thrownError) {
+                                      alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                                  }
+                              });
+                          },
+                          error: function(xhr, ajaxOptions, thrownError) {
+                              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                          }
+                      }).done(function() {
+      					$.ajax({
+      						url: 'index.php?route=checkout/payment_address',
+      						dataType: 'html',
+      						success: function(html) {
+      							$('#collapse-payment-address .panel-body').html(html);
+      						},
+      						error: function(xhr, ajaxOptions, thrownError) {
+      							alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      						}
+      					});
+      				});
+                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Guest
+      $(document).delegate('#button-guest', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/guest/save',
+              type: 'post',
+              data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address textarea, #collapse-payment-address select'),
+              dataType: 'json',
+              beforeSend: function() {
+             		$('#button-guest').button('loading');
+      	    },
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+      			$('.form-group').removeClass('has-error');
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#button-guest').button('reset');
+      
+                      if (json['error']['warning']) {
+                          $('#collapse-payment-address .panel-body').prepend('<div class="alert alert-warning alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+      
+      				for (i in json['error']) {
+      					var element = $('#input-payment-' + i.replace('_', '-'));
+      
+      					if ($(element).parent().hasClass('input-group')) {
+      						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					} else {
+      						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					}
+      				}
+      
+      				// Highlight any found errors
+      				$('.text-danger').parent().addClass('has-error');
+                  } else {
+                                      var shipping_address = $('#collapse-payment-address input[name=\'shipping_address\']:checked').prop('value');
+      
+                      if (shipping_address) {
+                          $.ajax({
+                              url: 'index.php?route=checkout/shipping_method',
+                              dataType: 'html',
+                              complete: function() {
+                                  $('#button-guest').button('reset');
+                              },
+                              success: function(html) {
+      							// Add the shipping address
+                                  $.ajax({
+                                      url: 'index.php?route=checkout/guest_shipping',
+                                      dataType: 'html',
+                                      success: function(html) {
+                                          $('#collapse-shipping-address .panel-body').html(html);
+      
+      									$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+                                      },
+                                      error: function(xhr, ajaxOptions, thrownError) {
+                                          alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                                      }
+                                  });
+      
+      						    $('#collapse-shipping-method .panel-body').html(html);
+      
+      							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
+      
+      							$('a[href=\'#collapse-shipping-method\']').trigger('click');
+      
+      							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                              },
+                              error: function(xhr, ajaxOptions, thrownError) {
+                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                              }
+                          });
+                      } else {
+                          $.ajax({
+                              url: 'index.php?route=checkout/guest_shipping',
+                              dataType: 'html',
+                              complete: function() {
+                                  $('#button-guest').button('reset');
+                              },
+                              success: function(html) {
+                                  $('#collapse-shipping-address .panel-body').html(html);
+      
+      							$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+      
+      							$('a[href=\'#collapse-shipping-address\']').trigger('click');
+      
+      							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+      							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                              },
+                              error: function(xhr, ajaxOptions, thrownError) {
+                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                              }
+                          });
+                      }
+                                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      // Guest Shipping
+      $(document).delegate('#button-guest-shipping', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/guest_shipping/save',
+              type: 'post',
+              data: $('#collapse-shipping-address input[type=\'text\'], #collapse-shipping-address input[type=\'date\'], #collapse-shipping-address input[type=\'datetime-local\'], #collapse-shipping-address input[type=\'time\'], #collapse-shipping-address input[type=\'password\'], #collapse-shipping-address input[type=\'checkbox\']:checked, #collapse-shipping-address input[type=\'radio\']:checked, #collapse-shipping-address textarea, #collapse-shipping-address select'),
+              dataType: 'json',
+              beforeSend: function() {
+              	$('#button-guest-shipping').button('loading');
+      		},
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+      			$('.form-group').removeClass('has-error');
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#button-guest-shipping').button('reset');
+      
+                      if (json['error']['warning']) {
+                          $('#collapse-shipping-address .panel-body').prepend('<div class="alert alert-danger alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+      
+      				for (i in json['error']) {
+      					var element = $('#input-shipping-' + i.replace('_', '-'));
+      
+      					if ($(element).parent().hasClass('input-group')) {
+      						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					} else {
+      						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+      					}
+      				}
+      
+      				// Highlight any found errors
+      				$('.text-danger').parent().addClass('has-error');
+                  } else {
+                      $.ajax({
+                          url: 'index.php?route=checkout/shipping_method',
+                          dataType: 'html',
+                          complete: function() {
+                              $('#button-guest-shipping').button('reset');
+                          },
+                          success: function(html) {
+                              $('#collapse-shipping-method .panel-body').html(html);
+      
+      						$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i>');
+      
+      						$('a[href=\'#collapse-shipping-method\']').trigger('click');
+      
+      						$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+      						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                          },
+                          error: function(xhr, ajaxOptions, thrownError) {
+                              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                          }
+                      });
+                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      $(document).delegate('#button-shipping-method', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/shipping_method/save',
+              type: 'post',
+              data: $('#collapse-shipping-method input[type=\'radio\']:checked, #collapse-shipping-method textarea'),
+              dataType: 'json',
+              beforeSend: function() {
+              	$('#button-shipping-method').button('loading');
+      		},
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#button-shipping-method').button('reset');
+      
+                      if (json['error']['warning']) {
+                          $('#collapse-shipping-method .panel-body').prepend('<div class="alert alert-danger alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+                  } else {
+                      $.ajax({
+                          url: 'index.php?route=checkout/payment_method',
+                          dataType: 'html',
+                          complete: function() {
+                              $('#button-shipping-method').button('reset');
+                          },
+                          success: function(html) {
+                              $('#collapse-payment-method .panel-body').html(html);
+      
+      						$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 5: Payment Method <i class="fa fa-caret-down"></i></a>');
+      
+      						$('a[href=\'#collapse-payment-method\']').trigger('click');
+      
+      						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+                          },
+                          error: function(xhr, ajaxOptions, thrownError) {
+                              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                          }
+                      });
+                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      
+      $(document).delegate('#button-payment-method', 'click', function() {
+          $.ajax({
+              url: 'index.php?route=checkout/payment_method/save',
+              type: 'post',
+              data: $('#collapse-payment-method input[type=\'radio\']:checked, #collapse-payment-method input[type=\'checkbox\']:checked, #collapse-payment-method textarea'),
+              dataType: 'json',
+              beforeSend: function() {
+               	$('#button-payment-method').button('loading');
+      		},
+              success: function(json) {
+                  $('.alert-dismissible, .text-danger').remove();
+      
+                  if (json['redirect']) {
+                      location = json['redirect'];
+                  } else if (json['error']) {
+                      $('#button-payment-method').button('reset');
+                      
+                      if (json['error']['warning']) {
+                          $('#collapse-payment-method .panel-body').prepend('<div class="alert alert-danger alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                      }
+                  } else {
+                      $.ajax({
+                          url: 'index.php?route=checkout/confirm',
+                          dataType: 'html',
+                          complete: function() {
+                              $('#button-payment-method').button('reset');
+                          },
+                          success: function(html) {
+                              $('#collapse-checkout-confirm .panel-body').html(html);
+      
+      						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('<a href="#collapse-checkout-confirm" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 6: Confirm Order <i class="fa fa-caret-down"></i></a>');
+      
+      						$('a[href=\'#collapse-checkout-confirm\']').trigger('click');
+      					},
+                          error: function(xhr, ajaxOptions, thrownError) {
+                              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                          }
+                      });
+                  }
+              },
+              error: function(xhr, ajaxOptions, thrownError) {
+                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+              }
+          });
+      });
+      //-->
+    </script>
+    <footer>
+      <div id="footer">
+        <div class="content_footer_top">
+        </div>
+        <div class="content_footer_wrapper">
+          <div class="content_footer_inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 column common first">
+                  <h5>Information</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="footer-left column col-md-3 col-lg-3">
+                  <div id="contact">
+                    <h5>Contact Us</h5>
+                    <ul>
+                      <li class="address">away fashion store.</li>
+                      <li>111, Puffin Street, New York, 12354</li>
+                      <li class="fax">1-212-98765432</li>
+                      <li class="email"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#">support@company.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--<div class="col-md-3 col-lg-3 column common second">
+                  <h5>My Account</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/manufacturer">Brands</a></li>
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/voucher">Gift Certificates</a></li>
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=affiliate/login">Affiliates</a></li>
+                  <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/sitemap">Site Map</a></li>
+                  <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/special">Specials</a></li>
+                  </ul>
+                  </div>-->
+                <!--<div class="col-md-3 col-lg-3 column common third">
+                  <h5>Extras</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/special">Specials</a></li>
+                  <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/manufacturer">Brands</a></li>
+                  <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=affiliate/login">Affiliates</a></li>
+                  <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/account">My Account</a></li>
+                  <li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/sitemap">Site Map</a></li>
+                  </ul>
+                  </div>-->
+                <div class="footer-social column col-md-3 col-lg-3">
+                  <div class="social">
+                    <h5>follow us</h5>
+                    <ul>
+                      <li class="social-item">
+                        <div class="social-item-inner">
+                          <div class="social-image"><span class="social-icon">&nbsp;</span></div>
+                          <div class="social-right"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#">Facebook</a></div>
+                        </div>
+                      </li>
+                      <li class="social-item">
+                        <div class="social-item-inner">
+                          <div class="social-image"><span class="social-icon">&nbsp;</span></div>
+                          <div class="social-right"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#">instagram</a></div>
+                        </div>
+                      </li>
+                      <li class="social-item">
+                        <div class="social-item-inner">
+                          <div class="social-image"><span class="social-icon">&nbsp;</span></div>
+                          <div class="social-right"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#">twitter</a></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-lg-3 column fourth">
+                  <div class="footer-right-wrapper">
+                    <script>
+                      function subscribe()
+                      {
+                      	var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                      	var email = $('#txtemail').val();
+                      	if(email != "")
+                      	{
+                      		if(!emailpattern.test(email))
+                      		{
+                      			$('.text-danger').remove();
+                      			var str = '<span class="error">Invalid Email</span>';
+                      			$('.subscribe-btn').after('<div class="text-danger">Invalid Email</div>');
+                      
+                      			return false;
+                      		}
+                      		else
+                      		{
+                      			$.ajax({
+                      				url: 'index.php?route=extension/module/newsletters/news',
+                      				type: 'post',
+                      				data: 'email=' + $('#txtemail').val(),
+                      				dataType: 'json',
+                      				
+                      							
+                      				success: function(json) {
+                      				
+                      				$('.text-danger').remove();
+                      				$('.subscribe-btn').after('<div class="text-danger">' + json.message + '</div>');
+                      				
+                      				}
+                      				
+                      			});
+                      			return false;
+                      		}
+                      	}
+                      	else
+                      	{
+                      		$('.text-danger').remove();
+                      		$('.subscribe-btn').after('<div class="text-danger">Email Is Require</div>');
+                      		$(email).focus();
+                      
+                      		return false;
+                      	}
+                      	
+                      
+                      }
+                    </script>
+                    <div class="newsletter">
+                      <div class="newsletter-wrapper">
+                        <!-- <div class="container">
+                          <div class="row"> -->
+                        <div class="newsletter-details col-md-12 col-xs-12 col-lg-12 ">
+                          <div class="newsletter-desc box">
+                            <div class="title-wrapper">
+                              <div class="newsletter-title box-heading">newsletter</div>
+                            </div>
+                            <!--<div class="desc">subscribe now</div>-->
+                          </div>
+                        </div>
+                        <div class="newsletter-block col-md-12 col-xs-12 col-lg-12">
+                          <!--<span class="newsletter-image"></span>
+                            <span class="newsletter-info">subscribe! new items.</span>-->
+                          <form method="post">
+                            <div class="form-group required">
+                              <label class="col-sm-2 control-label" for="txtemail">Enter your e-mail</label>
+                              <div class="input-news">
+                                <input type="email" name="txtemail" id="txtemail" value="" placeholder="Enter your e-mail" class="form-control input-lg"> 
+                              </div>
+                              <div class="subscribe-btn">
+                                <button type="submit" class="btn btn-default btn-lg" onclick="return subscribe();">subscribe</button>  
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- </div>
+                          </div> -->
+                      </div>
+                    </div>
+                    <div class="footer-payment">
+                      <div class="payment-block">
+                        <h5>payment method</h5>
+                        <ul>
+                          <li class="visa"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#"><img src="./Checkout_files/visa.svg" alt=""></a></li>
+                          <li class="paypal"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#"><img src="./Checkout_files/paypal.svg" alt=""></a></li>
+                          <li class="discover"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#"><img src="./Checkout_files/discover.svg" alt=""></a></li>
+                          <li class="mastercard"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#"><img src="./Checkout_files/mastercard.svg" alt=""></a></li>
+                          <li class="american-express"><a href="http://thementic.com/opencart/OPC02/OPC0200032/#"><img src="./Checkout_files/american-express.svg" alt=""></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright-container ">
+            <div class="content_footer_bottom container">
+              <div class="powered">Powered By <a href="http://thementic.com/opencart/OPC02/OPC0200032/#">OpenCart</a> Your Store © 2019</div>
+            </div>
+            <div class="footer-container">
+              <!-- <div id="bottomfooter">
+                <ul>
+                	<li class="first"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/special">Specials</a></li>
+                	<li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=affiliate/login">Affiliates</a></li>
+                	<li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/voucher">Gift Certificates</a></li>
+                	<li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/manufacturer">Brands</a></li>
+                	<li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=account/return/add">Returns</a></li>
+                	<li><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/sitemap">Site Map</a></li>
+                	<li class="last"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=information/contact">Contact Us</a></li>
+                </ul>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--
+      OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+      Please donate via PayPal to donate@opencart.com
+      //--> 
+    <!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
+    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+    <div id="lightbox" class="lightbox" style="display: none;">
+      <div class="lb-outerContainer">
+        <div class="lb-container">
+          <img class="lb-image" src="http://thementic.com/opencart/OPC02/OPC0200032/">
+          <div class="lb-nav"><a class="lb-prev" href="http://thementic.com/opencart/OPC02/OPC0200032/"></a><a class="lb-next" href="http://thementic.com/opencart/OPC02/OPC0200032/"></a></div>
+          <div class="lb-loader"><a class="lb-cancel"></a></div>
+        </div>
+      </div>
+      <div class="lb-dataContainer">
+        <div class="lb-data">
+          <div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div>
+          <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+      </div>
+    </div>
+    <a class="top_button" title="Back To Top" href="http://thementic.com/opencart/OPC02/OPC0200032/" style="display: none;">TOP</a>
+  </body>
+</html>

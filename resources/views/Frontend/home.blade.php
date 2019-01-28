@@ -16,9 +16,9 @@
                 <div class="swiper-viewport">
                   <div id="slideshow0" class="swiper-container" style="opacity: 1;">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide text-center"><a href="#"><img src="{{asset('assets/image/cache/catalog/demo/banners/main-banner-01-1903x700.jpg')}}" alt="mainbanner1" class="img-responsive" /></a></div>
-                      <div class="swiper-slide text-center"><a href="#"><img src="{{asset('assets/image/cache/catalog/demo/banners/main-banner-02-1903x700.jpg')}}" alt="mainbanner2" class="img-responsive" /></a></div>
-                      <div class="swiper-slide text-center"><a href="#"><img src="{{asset('assets/image/cache/catalog/demo/banners/main-banner-03%20-1903x700.jpg')}}" alt="mainbanner3" class="img-responsive" /></a></div>
+                      <div class="swiper-slide text-center"><a href="#"><img src="{{asset('assets/2015-04_Banner-Web_Roman-FebvreStrike-Eagle_943x471px_4.jpg')}}" alt="mainbanner1" class="img-responsive" /></a></div>
+                      <div class="swiper-slide text-center"><a href="#"><img src="{{asset('assets/banner_besar_velg_vnd_all_colour_scaled.jpg')}}" alt="mainbanner2" class="img-responsive" /></a></div>
+                      <div class="swiper-slide text-center"><a href="#"><img src="{{asset('assets/rcmm_banner-a218.jpg')}}" alt="mainbanner3" class="img-responsive" /></a></div>
                     </div>
                   </div>
                   <div class="swiper-pagination slideshow0"></div>
@@ -317,11 +317,11 @@
 <div class="item cms_face">
 <div class="testmonial-image"><img alt="testmonial" title="testmonial" src="{{asset('assets/image/catalog/demo/banners/person1.png')}}" width="110" height="110"></div>
 <div class="desc">
-<p>Excellent Company! I will definitely work with them again. Good communication, good work.</p>
+<p>{!!$data->deskrpsi!!}.</p>
 </div>
 <div class="product_inner_cms">
-<div class="name"><a href="#">Mack Jeckno</a></div>
-<div class="designation"><a title="Iphone Developer" href="#">Financer</a></div>
+<div class="name"><a href="#">{{$data->nama}}</a></div>
+<div class="designation"><a title="Iphone Developer" href="#">{{$data->profesi}}</a></div>
 </div>
 </div>
 </li>

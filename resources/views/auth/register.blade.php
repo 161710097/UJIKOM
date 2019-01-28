@@ -4,6 +4,9 @@
 @php
 $contact = App\Contact::all();
 @endphp
+@php
+$mycart = App\Cart::all();
+@endphp
 <div class="nav-inner-cms">
   <div class="header-bottom">
     <!-- <div class="main-menu container" id="cms-menu">

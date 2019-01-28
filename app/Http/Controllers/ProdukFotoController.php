@@ -29,9 +29,9 @@ class ProdukFotoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
-        $barang = Produk::all();
+        $barang = Produk::findOrFail($id);
         return view ('produkfoto.create', compact('barang'));
     }
 
