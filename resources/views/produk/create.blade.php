@@ -52,6 +52,10 @@
                 <input type="hidden" id="raw_harga_beli" value="" name="harga">
               </div>
               <div class="form-group">
+                <label>DISKON</label>
+                <input placeholder="Masukan Diskon" type="text" class="form-control" autocomplete="name" name="diskon" required>
+              </div>
+              <div class="form-group">
                 <label>STOCK</label>
                 <input placeholder="Masukan Stock" type="number" class="form-control" autocomplete="name" name="stock" required>
               </div>

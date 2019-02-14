@@ -39,18 +39,16 @@
   <div id="product-category" class="container">
     <ul class="breadcrumb">
       <li><a href="index9328.html?route=common/home"><i class="fa fa-home"></i></a></li>
-      <li><a href="index8122.html?route=product/category&amp;path=34">our store</a></li>
+      <li><a href="index8122.html?route=product/category&amp;path=34">Produk</a></li>
     </ul>
     <div class="row">
       @include('partial.sideproduk')
       <div id="content" class="col-sm-9 categorypage">
-        <h2 class="page-title">our store</h2>
+        <h2 class="page-title">Produk</h2>
         <div class="row category_thumb">
-          <div class="col-sm-2 category_img"><img src="{{asset('assets/image/cache/catalog/demo/banners/category-banner-892x149.jpg')}}" alt="our store" title="our store" class="img-thumbnail" /></div>
+          <div class="col-sm-2 category_img"></div>
           <div class="col-sm-10 category_description">
-            <p>
-              Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.
-            </p>
+            
           </div>
         </div>
         <!-- <h3 class="refine-search">Refine Search</h3>
@@ -129,10 +127,9 @@
                     </div>
                     <span class="percentsaving">70%</span>
                     <div class="button-group">
-                      <button type="button" data-placement="right" title="Add to cart" class="addtocart" onclick="cart.add('42 ');">Add to Cart</button>
-                      <button class="wishlist" type="button"  data-placement="right" title="Add to Wish List " onclick="wishlist.add('42 ');"></button>
-                      <div class="quickview" data-placement="right" title="Quickview" ><a href="index13e5.html?route=product/quick_view&amp;path=34&amp;product_id=42">Quick View</i></a></div>
-                      <button class="compare" type="button" data-placement="right" title="Compare this Product " onclick="compare.add('42 ');"></button>
+                      <a href="/produk/{{$data->slug}}">
+                      <button type="button" data-placement="right" title="Add to cart" class="addtocart">Add to Cart</button></a>
+                      
                     </div>
                   </div>
                   <div class="product-details">

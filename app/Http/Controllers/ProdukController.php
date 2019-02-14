@@ -37,6 +37,7 @@ class ProdukController extends Controller
         ->addColumn(['data' => 'merk.nama', 'name'=>'merk.nama', 'title'=>'MERK'])
         ->addColumn(['data' => 'kategoriproduk.nama', 'name'=>'kategoriproduk.nama', 'title'=>'KATEGORI'])
         ->addColumn(['data' => 'harga', 'name'=>'harga', 'title'=>'HARGA'])
+        ->addColumn(['data' => 'diskon', 'name'=>'diskon', 'title'=>'DISKON'])
         ->addColumn(['data' => 'stock', 'name'=>'stock', 'title'=>'STOCK'])
         ->addColumn(['data' => 'action', 'name'=>'action', 'title'=>'AKSI', 'orderable'=>false, 'searchable'=>false]);
             return view('produk.index')->with(compact('html'));
@@ -80,6 +81,7 @@ class ProdukController extends Controller
             'nama' => 'required|',
             'merk_id' => 'required|',
             'harga' => 'required|numeric',
+            'diskon' => 'required|',
             'deskripsi' => 'required|',
             'kategori_id' => 'required|',
             'stock' => 'required|'
@@ -89,6 +91,7 @@ class ProdukController extends Controller
         $barang->nama = $request->nama;
         $barang->merk_id = $request->merk_id;
         $barang->harga = str_replace(".","" ,$request->harga);
+        $barang->diskon = $request->diskon;
         $barang->deskripsi = $request->deskripsi;
         $barang->kategori_id = $request->kategori_id;
         $barang->stock = $request->stock;
@@ -137,6 +140,7 @@ class ProdukController extends Controller
         $b->nama = $request->nama;
         $b->merk_id = $request->merk_id;
         $b->harga = $request->harga;
+        $b->diskon = $request->diskon;
         $b->deskripsi = $request->deskripsi;
         $b->stock = $request->stock;
         $b->slug = str_slug($request->nama,'-');

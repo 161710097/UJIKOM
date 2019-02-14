@@ -76,7 +76,7 @@
               <div id="Tab_Category_Slider" class="category_tab box">
                 <div class="container">
                   <div class="title-wrapper">
-                    <div class="box-heading">our Products</div>
+                    <div class="box-heading">Produk</div>
                   </div>
                   <div class="tabs">
                     <div class="etabs">
@@ -94,6 +94,7 @@
                     <div class="tab-content home-products">
                       <div class="tab-pane active" id="bottomwear">
                         <div class="owl-carousel owl-demo-tabcate">
+                          @if (count($produk) > 0)
                           @foreach($produk as $data)
                           <div class="product-block-wrapper">
                             <div class="item text-center product-innerblock">
@@ -115,19 +116,33 @@
                                       <div class="saleback">
                                         <span class="saleicon sale">Sale</span>         
                                       </div>
-                                      <span class="percentsaving">52%</span>
+                                      @if($data->diskon <= 0 )
+                                      @else
+                                      <span class="percentsaving">{{$data->diskon}}%</span>
+                                      @endif
                                       <div class="button-group">
-                                        <button type="button" data-placement="right" title="Add to Cart" class="addtocart" onclick="cart.add('51 ');">Add to Cart</button>
-                                        <button class="wishlist" type="button" data-placement="right" title="Add to Wish List " onclick="wishlist.add('51 ');"></button>
-                                        <div class="quickview" data-placement="right" title="Quick view" ><a href="index3cc7.html?route=product/quick_view&amp;product_id=51">Quick View</a></div>
-                                        <button class="compare" type="button" data-placement="right" title="Compare this Product " onclick="compare.add('51 ');"></button>
+                                        <a href="/produk/{{$data->slug}}">
+                                        <button type="button" data-placement="right" title="Add to Cart" class="addtocart" >Add to Cart</button></a>
                                       </div>
                                     </div>
                                     <!-- <div class="product-details"> -->
                                     <div class="caption">
                                       <h4><a href="/produk/{{$data->slug}}">{{$data->nama}}</a></h4>
+                                      @php
+                                      $hargadiskon = $data->harga * $data->diskon / 100;
+                                      $hargadis = $data->harga - $hargadiskon;
+                                      @endphp
                                       <p class="price">
-                                        <span class="price-new">Rp.{{$data->harga}}</span> <span class="price-old">$122.00</span>
+                                        <span class="price-new">
+                                        @if($data->diskon <= 0)
+                                        Rp.{{number_format($data->harga,2,',','.')}}
+                                        @else
+                                        Rp.{{number_format($hargadis,2,',','.')}}
+                                        <span class="price-old">Rp.{{number_format($data->harga,2,',','.')}}
+                                        </span>
+                                        @endif
+                                        </span>
+
                                         <span class="price-tax">Ex Tax: $48.00</span>
                                       </p>
                                       <div class="rating">
@@ -147,96 +162,14 @@
                           @endforeach
                         </div>
                       </div>
-                      <div class="tab-pane" id="etruscan ">
-                        <div class="owl-carousel owl-demo-tabcate">
-                          <div class="product-block-wrapper">
-                            <div class="item text-center product-innerblock">
-                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="product-block product-thumb transition">
-                                  <div class="product-block-inner">
-                                    <div class="image">
-                                      <a href="index52a0.html?route=product/product&amp;product_id=51">
-                                      <img src="image/cache/catalog/demo/product/1-285x357.jpg" title="aenean dignissim" alt="aenean dignissim" class="img-responsive reg-image"/>
-                                      <img class="img-responsive hover-image" src="image/cache/catalog/demo/product/15-285x357.jpg" title="aenean dignissim" alt="aenean dignissim"/>
-                                      </a>
-                                      <div class="saleback">
-                                        <span class="saleicon sale">Sale</span>         
-                                      </div>
-                                      <span class="percentsaving">52%</span>
-                                      <div class="button-group">
-                                        <button type="button" data-placement="right" title="Add to Cart" class="addtocart" onclick="cart.add('51 ');">Add to Cart</button>
-                                        <button class="wishlist" type="button" data-placement="right" title="Add to Wish List " onclick="wishlist.add('51 ');"></button>
-                                        <div class="quickview" data-placement="right" title="Quick view" ><a href="index3cc7.html?route=product/quick_view&amp;product_id=51">Quick View</a></div>
-                                        <button class="compare" type="button" data-placement="right" title="Compare this Product " onclick="compare.add('51 ');"></button>
-                                      </div>
-                                    </div>
-                                    <!-- <div class="product-details"> -->
-                                    <div class="caption">
-                                      <h4><a href="index52a0.html?route=product/product&amp;product_id=51">aenean dignissim </a></h4>
-                                      <p class="price">
-                                        <span class="price-new">$59.60</span> <span class="price-old">$122.00</span>
-                                        <span class="price-tax">Ex Tax: $48.00</span>
-                                      </p>
-                                      <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                      </div>
-                                    </div>
-                                    <!-- </div> -->
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item text-center product-innerblock">
-                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="product-block product-thumb transition">
-                                  <div class="product-block-inner">
-                                    <div class="image">
-                                      <a href="indexbb02.html?route=product/product&amp;product_id=42">
-                                      <img src="image/cache/catalog/demo/product/15-285x357.jpg" title="consectetur adipiscing" alt="consectetur adipiscing" class="img-responsive reg-image"/>
-                                      <img class="img-responsive hover-image" src="image/cache/catalog/demo/product/3-285x357.jpg" title="consectetur adipiscing" alt="consectetur adipiscing"/>
-                                      </a>
-                                      <div class="saleback">
-                                        <span class="saleicon sale">Sale</span>         
-                                      </div>
-                                      <span class="percentsaving">70%</span>
-                                      <div class="button-group">
-                                        <button type="button" data-placement="right" title="Add to Cart" class="addtocart" onclick="cart.add('42 ');">Add to Cart</button>
-                                        <button class="wishlist" type="button" data-placement="right" title="Add to Wish List " onclick="wishlist.add('42 ');"></button>
-                                        <div class="quickview" data-placement="right" title="Quick view" ><a href="index6d6f.html?route=product/quick_view&amp;product_id=42">Quick View</a></div>
-                                        <button class="compare" type="button" data-placement="right" title="Compare this Product " onclick="compare.add('42 ');"></button>
-                                      </div>
-                                    </div>
-                                    <!-- <div class="product-details"> -->
-                                    <div class="caption">
-                                      <h4><a href="indexbb02.html?route=product/product&amp;product_id=42">consectetur adipiscing </a></h4>
-                                      <p class="price">
-                                        <span class="price-new">$38.00</span> <span class="price-old">$122.00</span>
-                                        <span class="price-tax">Ex Tax: $30.00</span>
-                                      </p>
-                                      <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                      </div>
-                                    </div>
-                                    <!-- </div> -->
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
+                    @else
+                      <h2>Produk Tidak di Temukan</h2>
+                    @endif
                   </div>
                 </div>
               </div>
+            </div>
               
               <div id="carousel-0" class="banners-slider-carousel">
                 <div class="container">

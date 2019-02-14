@@ -10,7 +10,7 @@ $contact =App\Contact::all();
               <div class="container">
                 <div class="row">
                   <div class="col-md-3 col-lg-3 column common first">
-                    <h5>Information</h5>
+                    <h5>Informasi</h5>
                     <ul class="list-unstyled">
                       <li><a href="index8816.html?route=information/information&amp;information_id=4">About Us</a></li>
                       <li><a href="index1766.html?route=information/information&amp;information_id=6">Delivery Information</a></li>
@@ -20,7 +20,7 @@ $contact =App\Contact::all();
                   </div>
                   <div class="footer-left column col-md-3 col-lg-3">
                     <div id="contact">
-                      <h5>Contact Us</h5>
+                      <h5>Hubungi Kami</h5>
                       <ul>
                         @foreach($contact as $data)
                         <li class="address">{{$data->alamat}}</li>
@@ -32,7 +32,7 @@ $contact =App\Contact::all();
                   </div>
                   <div class="footer-social column col-md-3 col-lg-3">
                     <div class="social">
-                      <h5>follow us</h5>
+                      <h5>Ikuti Kita</h5>
                       <ul>
                         <li class="social-item">
                           <div class="social-item-inner">

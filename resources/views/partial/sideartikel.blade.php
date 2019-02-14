@@ -1,7 +1,7 @@
 <aside id="column-left" class="col-sm-3 hidden-xs">
       <div class="box">
         <div class="title-wrapper">
-          <div class="box-heading">Categories</div>
+          <div class="box-heading">Kategori</div>
         </div>
         <div class="box-content">
           <ul class="box-category treeview-list treeview">
@@ -16,7 +16,7 @@
       <div class="box featured product-box">
         <div class="container">
           <div class="title-wrapper">
-            <div class="box-heading">Recent Post</div>
+            <div class="box-heading">Postingan Terbaru</div>
           </div>
           <div class="box-content">
             <div class="featured-products home-products">
@@ -65,14 +65,14 @@
         </div>
       </div>
       <span class="featured_default_width" style="display:none; visibility:hidden"></span>
-      <div class="swiper-viewport">
+      <!-- <div class="swiper-viewport">
         <div id="banner0" class="swiper-container  single-banner ">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><a href="#"><img src="{{asset('assets/image/cache/catalog/demo/banners/left-banner-277x368.jpg')}}" alt="left-banner" class="img-responsive" /></a></div>
           </div>
-          <!-- If we need pagination -->
+          <!-- If we need pagination
           <div class="swiper-pagination"></div>
         </div>
-      </div>
+      </div> --> -->
       <span class="latest_default_width" style="display:none; visibility:hidden"></span>
     </aside>

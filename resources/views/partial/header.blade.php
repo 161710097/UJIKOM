@@ -39,8 +39,8 @@
                 <span class="mainmenu-text">menu</span>
               </div>
               <ul class="nav navbar-nav">
-                <li class="top_level home"><a href="{{url('/')}}">Home</a></li>
-                <li class="top_level" > <a href="{{url('/artikel')}}">blog</a></li>
+                <li class="top_level home"><a href="{{url('/')}}">Beranda</a></li>
+                <li class="top_level" > <a href="{{url('/artikel')}}">Artikel</a></li>
                 <li class="top_level dropdown">
                   <a href="{{url('/produk')}}">our store</a>
                   <div class="dropdown-menu megamenu column3">
@@ -96,66 +96,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="top_level" > <a href="{{url('/aboutus')}}">About US</a></li>
-                <li class="top_level dropdown">
-                  <a href="index98dc.html?route=product/category&amp;path=20">top wear</a>
-                  <div class="dropdown-menu megamenu column1">
-                    <div class="dropdown-inner">
-                      <ul class="list-unstyled childs_1">
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="indexd9fe.html?route=product/category&amp;path=20_26">gravida</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="indexf345.html?route=product/category&amp;path=20_27">lighting &amp; studio</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="top_level dropdown">
-                  <a href="index7fa3.html?route=product/category&amp;path=18">bottomwear</a>
-                  <div class="dropdown-menu megamenu column1">
-                    <div class="dropdown-inner">
-                      <ul class="list-unstyled childs_1">
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="index9f41.html?route=product/category&amp;path=18_46">Macs</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="index8470.html?route=product/category&amp;path=18_45">refrigerators</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="top_level dropdown">
-                  <a href="index1647.html?route=product/category&amp;path=25">etruscan </a>
-                  <div class="dropdown-menu megamenu column1">
-                    <div class="dropdown-inner">
-                      <ul class="list-unstyled childs_1">
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="indexf3db.html?route=product/category&amp;path=25_31">canonical adaptations</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="index68a7.html?route=product/category&amp;path=25_30">hemp jewelry</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="indexc219.html?route=product/category&amp;path=25_29">Safed chalwan</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                        <!-- 2 Level Sub Categories START -->
-                        <li><a href="index955a.html?route=product/category&amp;path=25_32">untrammelled owing</a></li>
-                        <!-- 2 Level Sub Categories END -->
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="top_level"><a href="index70a9.html?route=product/category&amp;path=57">grapefruits</a></li>
-                <li class="top_level"><a href="indexb152.html?route=product/category&amp;path=17">pomegranates</a></li>
-                <li class="top_level"><a href="index6067.html?route=product/category&amp;path=60">tengelows</a></li>
-                <li class="top_level"><a href="index76bc.html?route=product/category&amp;path=61">cantaloupe</a></li>
-                <li class="top_level"><a href="index0854.html?route=product/category&amp;path=62">festive wear</a></li>
-                <!--<li class="level0" ><a href="">Sitemap</a></li>
-                  <li class="level0" ><a href="">contact us</a></li> 
-                  <li class="level0" ><a href="">about us</a></li> -->
+                <li class="top_level" > <a href="{{url('/aboutus')}}">Tentang Kami</a></li>
               </ul>
             </div>
           </div>
@@ -163,7 +104,7 @@
       </div>
       </nav>   
       <div class="dropdown myaccount">
-        <a href="indexe223.html?route=account/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown">
+        <a href="indexe223.html?route=account/account" title="Akun Saya" class="dropdown-toggle" data-toggle="dropdown">
           <!--<span class="account-title">My Account</span>--> <span class="caret"></span>
           @if (Route::has('login'))
           @auth
@@ -172,17 +113,17 @@
         <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
         <li>
           <a href="{{ route('logout') }}" onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">Logout</a>
+            document.getElementById('logout-form').submit();">Keluar</a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             {{ csrf_field() }}
           </form>
         </li>
         @else
-        <span class="user-info-image">My Account<i class="fa fa-angle-down"></i></span>
+        <span class="user-info-image">Akun Saya<i class="fa fa-angle-down"></i></span>
         </a>
         <ul class="dropdown-menu dropdown-menu-right myaccount-menu">
-          <li><a href="{{route('register')}}">Register</a></li>
-          <li><a href="{{route('login')}}">Login</a></li>
+          <li><a href="{{route('register')}}">Daftar</a></li>
+          <li><a href="{{route('login')}}">Masuk</a></li>
           @endauth
           @endif                  
           <nav id="top">
@@ -193,7 +134,7 @@
         </ul>
       </div>
       <div class="header-logo">
-        <div id="logo"><a href="index9328.html?route=common/home"><img src="{{asset('assets/image/logos.png')}}" title="Your Store" alt="Your Store" class="img-responsive" /></a></div>
+        <div id="logo"><a href="{{url('/')}}"><img src="{{asset('assets/image/logos.png')}}" title="Your Store" alt="Your Store" class="img-responsive" /></a></div>
       </div>
       <div class="header-cart">
         <div id="cart" class="btn-group btn-block">
@@ -213,7 +154,7 @@
             <span id="cart-total"></span>
 
             @endif
-            <span id="cart-title">your bag<i class="fa fa-angle-down"></i></span>  
+            <span id="cart-title">Keranjang<i class="fa fa-angle-down"></i></span>  
           </button>
           <ul class="dropdown-menu pull-right cart-menu" style="display: none;">
             @if(Auth::check())
@@ -224,14 +165,21 @@
               <table class="table table-striped">
                 <tbody>
                   @foreach($mycart as $data)
+                  @php 
+                    $hargadiskon = $data->produk->harga * $data->produk->diskon / 100;
+                    $hargadis = $data->produk->harga - $hargadiskon;
+                    $t_s = $data->quantity * $hargadis;
+                    $total_all = $total_all + $t_s;
+                  @endphp
                   <tr>
-                    <td class="text-center"> <a href="http://thementic.com/opencart/  OPC02/OPC0200032/index.php?route=product/product&amp;product_id=51"><img src="./carttt_files/1-74x74.jpg" alt="aenean dignissim" title="aenean dignissim" class="img-thumbnail"></a> 
+                    <td class="text-center"> 
                     </td>
                     <td class="text-left"><a href="http://thementic.com/opencart/OPC02/OPC0200032/index.php?route=product/product&amp;product_id=51">{{$data->Produk->nama}}</a>              <br>
                     </td>
                     <td class="text-right">x {{$data->quantity}}</td>
-                    <td class="text-right">Rp.{{number_format($data->quantity * $data->produk->harga,2,',','.')}}</td>
-                    <td class="text-center"><button type="button" onclick="cart.remove(&#39;102&#39;);" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+                    <td class="text-right">Rp.{{number_format($data->quantity * $hargadis,2,',','.')}}</td>
+                    <td class="text-center"><a href="{{url('cart/delete', $data->id)}}"><button type="button" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></a>
+                    </td>
                   </tr>
                   @endforeach
                 </tbody>
@@ -269,12 +217,14 @@
       <div class="dropdown search" title="Search item here">
         <div class="header-search dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown"></div>
         <div id="search" class="input-group dropdown-menu">
-          <input type="text" name="search" value="" placeholder="Search item here" class="form-control input-lg" />
+          <form method="get" action="{{url('search')}}">
+          <input type="text" name="search" value="" placeholder="Cari Barang di Sini" class="form-control input-lg" />
           <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-lg">Search item here
+          <button type="submit" class="btn btn-default btn-lg">Cari Barang di Sini
           <span class="search_button"></span>
           </button>
           </span>
+          </form>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@
   <div id="product-product" class="container">
     <ul class="breadcrumb">
       <li><a href="index9328.html?route=common/home"><i class="fa fa-home"></i></a></li>
-      <li><a href="index8122.html?route=product/category&amp;path=34">our store</a></li>
+      <li><a href="index8122.html?route=product/category&amp;path=34">Produk</a></li>
       <li><a href="index0556.html?route=product/product&amp;path=34&amp;product_id=40">{{$produk->nama}}</a></li>
     </ul>
     <div class="row">
@@ -42,7 +42,7 @@
                 <!-- Cloud-Zoom Image Effect Start -->
                 @foreach($produk->Produkfoto()->get() as $barangfoto)
                 @if ($loop->first)
-                <div class="image"><a class="thumbnail" href="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" title="consequat nibh"><img id="tmzoom" src="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" data-zoom-image="http://thementic.com/opencart/OPC02/OPC0200032/image/cache/catalog/demo/product/4-798x1000.jpg" title="consequat nibh" alt="consequat nibh" /></a></div>
+                <div class="image"><a class="thumbnail" href="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" title="consequat nibh"><img id="tmzoom" src="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" data-zoom-image="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" title="consequat nibh" alt="consequat nibh" /></a></div>
                 @endif
                 @endforeach
                 <div class="additional-carousel">
@@ -54,7 +54,7 @@
                     @foreach($produk->Produkfoto()->get() as $barangfoto)
                     <div class="slider-item">
                       <div class="product-block">   
-                        <a href="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" title="consequat nibh" class="elevatezoom-gallery" data-image="http://thementic.com/opencart/OPC02/OPC0200032/image/cache/catalog/demo/product/4-553x693.jpg')}}" data-zoom-image="http://thementic.com/opencart/OPC02/OPC0200032/image/cache/catalog/demo/product/4-798x1000.jpg')}}"><img src="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" width="74" height="74" title="consequat nibh" alt="consequat nibh" /></a>
+                        <a href="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" title="consequat nibh" class="elevatezoom-gallery" data-image="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" data-zoom-image="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}"><img src="{{ asset('admin/images/fotobarang/'.$barangfoto->foto)  }}" width="74" height="74" title="consequat nibh" alt="consequat nibh" /></a>
                       </div>
                     </div>
                     @endforeach
@@ -77,15 +77,30 @@
                 <a href="#" class="review-count" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">1 reviews</a>  <a href="#" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" class="write-review"><i class="fa fa-pencil"></i>Write a review</a>
               </div>
               <ul class="list-unstyled">
-                <li><span class="desc">Brands</span><a href="index98fa.html?route=product/manufacturer/info&amp;manufacturer_id=8">{{$produk->merk->nama}}</a></li>
+                <li><span class="desc">Merek</span><a href="index98fa.html?route=product/manufacturer/info&amp;manufacturer_id=8">{{$produk->merk->nama}}</a></li>
                 <!-- <li><span class="desc">Product Code:</span> product 11</li> -->
-                <li><span class="desc">Availability:</span> {{$produk->stock}}</li>
+                @if($produk->stock <=0)
+                <li><span class="desc">Ketersediaan:</span> Stock Habis</li>
+                @else
+                <li><span class="desc">Ketersediaan:</span> {{$produk->stock}}</li>
+                @endif
               </ul>
+              @php
+                  $hargadiskon = $produk->harga * $produk->diskon / 100;
+                  $hargadis = $produk->harga - $hargadiskon;
+              @endphp
               <ul class="list-unstyled price">
-                <li><span class="price-old" style="text-decoration: line-through;">$123.20</span></li>
+                @if($produk->diskon <= 0)
                 <li>
-                  <h2 class="special-price">Rp.{{number_format($produk->harga)}}</h2>
+                  <h2 class="special-price">Rp.{{number_format($hargadis,2,',','.')}}</h2>
                 </li>
+                @else
+                <li><span class="price-old" style="text-decoration: line-through;">Rp.{{number_format($produk->harga,2,',','.')}}</span></li>
+                
+                <li>
+                  <h2 class="special-price">Rp.{{number_format($hargadis,2,',','.')}}</h2>
+                </li>
+                @endif
                 <!-- <li class="price-tax">Ex Tax: $55.00</li> -->
               </ul>
               <div id="product">
@@ -119,8 +134,8 @@
         <!-- product page tab code start-->
         <div id="tabs_info" class="product-tab col-sm-12">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab-description" data-toggle="tab">Description</a></li>
-            <li><a href="#tab-review" data-toggle="tab">Reviews (1)</a></li>
+            <li class="active"><a href="#tab-description" data-toggle="tab">Deskripsi</a></li>
+            <li><a href="#tab-review" data-toggle="tab">Komentar (1)</a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description">

@@ -46,6 +46,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth','role:admin']], function 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/search', 'FrontendController@search')->name('search');
 
 //Frontend
 Route::get('/', 'FrontendController@home');
@@ -152,7 +153,7 @@ Route::group(['middleware'=>'auth'],function(){
             $transaksi->nama_lengkap = $request->nama_lengkap;
             $transaksi->email = $request->email;
             $transaksi->no_tlp = $request->no_tlp;
-            $transaksi->pengiriman = $request->pengiriman;
+            $transaksi->alamat = $request->alamat;
             $transaksi->jumlah_brg = $data->jumlah_brg;
             $transaksi->pembayaran = $request->pembayaran;
             $transaksi->product_id = $data->product_id;

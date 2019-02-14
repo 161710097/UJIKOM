@@ -51,6 +51,10 @@
                 <input value="{{$barang->harga}}" type="number" class="form-control" autocomplete="name" name="harga" required>
               </div>
               <div class="form-group">
+                <label>DISKON</label>
+                <input value="{{$barang->diskon}}" type="text" class="form-control" autocomplete="name" name="diskon" required>
+              </div>
+              <div class="form-group">
                 <label>STOCK</label>
                 <input value="{{$barang->stock}}" type="number" class="form-control" autocomplete="name" name="stock" required>
               </div>

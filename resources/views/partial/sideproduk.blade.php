@@ -1,7 +1,7 @@
 <aside id="column-left" class="col-sm-3 hidden-xs">
         <div class="box">
           <div class="title-wrapper">
-            <div class="box-heading">Categories</div>
+            <div class="box-heading">Kategori</div>
           </div>
           <div class="box-content">
             <ul class="box-category treeview-list treeview">
@@ -346,15 +346,15 @@
           </div>
         </div>
         <span class="featured_default_width" style="display:none; visibility:hidden"></span>
-        <div class="swiper-viewport">
+        <!-- <div class="swiper-viewport">
           <div id="banner0" class="swiper-container  single-banner ">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><a href="#"><img src="{{asset('assets/image/cache/catalog/demo/banners/left-banner-277x368.jpg')}}" alt="left-banner" class="img-responsive" /></a></div>
             </div>
-            <!-- If we need pagination -->
+             If we need pagination
             <div class="swiper-pagination"></div>
           </div>
-        </div>
+        </div> --> 
         <script type="text/javascript"><!--
           $('#banner0').swiper({
           	effect: 'fade',
@@ -367,7 +367,7 @@
         <div class="box latest product-box">
           <div class="container">
             <div class="title-wrapper">
-              <div class="box-heading">new arrivals</div>
+              <div class="box-heading">Produk Terbaru</div>
             </div>
             <div class="box-content">
               <div class="latest-products home-products">

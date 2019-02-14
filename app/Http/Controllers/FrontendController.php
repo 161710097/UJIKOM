@@ -17,9 +17,20 @@ use DB;
 
 class FrontendController extends Controller
 {
+    public function search(Request $request)
+    {
+        $search = $request->get('search');
+        $produk = Produk::where('nama','LIKE','%'.$search.'%')->orderBy('created_at','desc')->paginate(6);
+        $merk = Merk::all();
+        $testimoni = Testimoni::all();
+        $mycart = cart::all();
+        $artikel = Artikel::orderBy('created_at', 'desc')->paginate(3);
+        $contact = Contact::all();
+        return view ('Frontend.home', compact('artikel','testimoni','merk','mycart','produk','contact','search'));
+    }
+
     public function home()
     {
-    	
     	$produk = Produk::orderBy('created_at','desc')->paginate(6);
     	$kategoriproduk = KategoriProduk::all();
     	$kategoriartikel = KategoriArtikel::all();
